@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Georgian Atherosclerosis Association | საქართველოს ათეროსკლეროზის ასოციაცია</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D2B4E;
+    --navy-mid: #1A3F6F;
+    --teal: #0E7C7B;
+    --teal-light: #E6F4F4;
+    --gold: #C8922A;
+    --gold-light: #FBF3E4;
+    --text: #1C1C1C;
+    --text-muted: #5A5A5A;
+    --border: #E0E0E0;
+    --bg: #FAFAFA;
+    --white: #FFFFFF;
+    --red-geo: #D42B2B;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; color: var(--text); background: var(--bg); line-height: 1.7; }
+  [lang="ka"], .ka { font-family: 'Noto Sans Georgian', 'Inter', sans-serif; }
+
+  /* LANG BAR */
+  .lang-bar {
+    background: var(--navy-mid);
+    display: flex; justify-content: flex-end; align-items: center;
+    padding: 0 2.5rem; height: 36px; gap: 6px;
+  }
+  .lang-btn {
+    background: none; border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.65); padding: 3px 12px; border-radius: 3px;
+    font-size: 12px; font-weight: 600; cursor: pointer; letter-spacing: 0.05em;
+    transition: all 0.2s; font-family: 'Inter', sans-serif;
+  }
+  .lang-btn.active { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+  .lang-btn:hover:not(.active) { border-color: rgba(255,255,255,0.5); color: var(--white); }
+  .lang-sep { color: rgba(255,255,255,0.2); font-size: 12px; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--navy); border-bottom: 3px solid var(--gold);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2.5rem; height: 68px; flex-wrap: wrap;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .geo-flag {
+    width: 34px; height: 22px; border-radius: 3px; overflow: hidden;
+    position: relative; background: #fff; flex-shrink: 0;
+  }
+  .geo-flag::before, .geo-flag::after { content: ''; position: absolute; background: var(--red-geo); }
+  .geo-flag::before { left: 50%; top: 0; width: 2px; height: 100%; transform: translateX(-50%); }
+  .geo-flag::after { top: 50%; left: 0; height: 2px; width: 100%; transform: translateY(-50%); }
+
+  .nav-title { font-weight: 700; font-size: 15px; color: var(--white); letter-spacing: 0.01em; line-height: 1.3; }
+  .nav-title span { color: var(--gold); }
+  .nav-title-sub { font-family: 'Noto Sans Georgian', sans-serif; font-size: 11px; color: rgba(255,255,255,0.5); display: block; font-weight: 400; }
+
+  .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+  .nav-links a {
+    color: rgba(255,255,255,0.78); text-decoration: none; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.02em; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--navy) !important; padding: 8px 18px;
+    border-radius: 4px; font-weight: 700 !important;
+  }
+  .nav-cta:hover { opacity: 0.88; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 55%, #1e5a8a 100%);
+    color: var(--white); padding: 4.5rem 2.5rem 4rem; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -100px; right: -100px; width: 450px; height: 450px;
+    border-radius: 50%; background: radial-gradient(circle, rgba(200,146,42,0.18) 0%, transparent 70%); pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -120px; left: -80px; width: 320px; height: 320px;
+    border-radius: 50%; background: radial-gradient(circle, rgba(14,124,123,0.18) 0%, transparent 70%); pointer-events: none;
+  }
+  .hero-inner { max-width: 1000px; margin: 0 auto; position: relative; text-align: center; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem;
+    border: 1px solid rgba(200,146,42,0.4); padding: 5px 14px; border-radius: 2px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5.5vw, 3.6rem); font-weight: 800;
+    line-height: 1.2; margin-bottom: 1rem;
+  }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero-ka {
+    font-family: 'Noto Sans Georgian', sans-serif; font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: rgba(255,255,255,0.6); font-weight: 600; margin-bottom: 1.5rem;
+  }
+  .hero-sub {
+    font-size: 17px; color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto 2rem;
+    line-height: 1.8;
+  }
+  .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+  .btn-primary {
+    background: var(--gold); color: var(--navy); padding: 13px 28px; border-radius: 4px;
+    font-size: 14px; font-weight: 700; text-decoration: none; display: inline-block; transition: opacity 0.2s;
+  }
+  .btn-primary:hover { opacity: 0.88; }
+  .btn-outline {
+    border: 1.5px solid rgba(255,255,255,0.4); color: var(--white); padding: 13px 28px; border-radius: 4px;
+    font-size: 14px; font-weight: 600; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+
+  .hero-stats {
+    display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+    padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.15); max-width: 800px; margin: 0 auto;
+  }
+  .stat { display: flex; flex-direction: column; gap: 4px; text-align: center; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 800; color: var(--gold); line-height: 1; }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.03em; max-width: 140px; }
+
+  /* SECTIONS */
+  section { padding: 4.5rem 2.5rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-head { text-align: center; max-width: 700px; margin: 0 auto 3rem; }
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 6px;
+  }
+  h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 800; color: var(--navy); line-height: 1.25; margin-bottom: 4px; }
+  .h2-ka {
+    font-family: 'Noto Sans Georgian', sans-serif; font-size: clamp(0.95rem, 2vw, 1.15rem);
+    font-weight: 600; color: var(--text-muted); margin-bottom: 0.5rem;
+  }
+  .divider { width: 48px; height: 3px; background: var(--gold); margin: 0.6rem auto 1.5rem; border-radius: 2px; }
+  .section-head p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-top: 1rem; }
+
+  /* ABOUT GRID */
+  .about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  .about-card {
+    background: var(--white); border: 1px solid var(--border); border-radius: 10px;
+    padding: 1.75rem 1.5rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .about-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(13,43,78,0.08); }
+  .about-icon {
+    width: 52px; height: 52px; border-radius: 50%; background: var(--teal-light);
+    display: flex; align-items: center; justify-content: center; font-size: 24px; margin: 0 auto 1rem;
+  }
+  .about-card h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .about-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); font-weight: 500; margin-bottom: 8px; }
+  .about-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
+  .about-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
+
+  /* NEWS */
+  .news-section { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .news-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; background: var(--bg); }
+  .news-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(13,43,78,0.08); }
+  .news-img {
+    height: 130px; background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+    display: flex; align-items: center; justify-content: center; font-size: 32px; color: rgba(255,255,255,0.85);
+  }
+  .news-body { padding: 1.25rem; }
+  .news-date { font-size: 11px; color: var(--gold); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+  .news-card h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; line-height: 1.4; }
+  .news-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); font-weight: 500; margin-bottom: 8px; line-height: 1.5; }
+  .news-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
+  .news-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
+
+  /* COLLABORATIONS */
+  .collab-section { background: var(--navy); color: var(--white); }
+  .collab-section h2 { color: var(--white); }
+  .collab-section .section-label { color: var(--gold); }
+  .collab-section .h2-ka { color: rgba(255,255,255,0.55); }
+  .collab-section .section-head p { color: rgba(255,255,255,0.7); }
+
+  .collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .collab-card {
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 1.75rem;
+    background: rgba(255,255,255,0.04); transition: background 0.2s;
+  }
+  .collab-card:hover { background: rgba(255,255,255,0.08); }
+  .collab-tag {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); border: 1px solid rgba(200,146,42,0.4);
+    padding: 3px 10px; border-radius: 20px; margin-bottom: 1rem;
+  }
+  .collab-card h3 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+  .collab-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 10px; }
+  .collab-card p { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 1rem; }
+  .collab-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; }
+  .collab-link { font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .collab-link:hover { text-decoration: underline; }
+
+  /* MEMBERSHIP */
+  .membership-section { background: var(--teal-light); }
+  .membership-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
+  .membership-text p { font-size: 15px; color: var(--text-muted); line-height: 1.85; margin-bottom: 1rem; }
+  .membership-text p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 14px; }
+  .benefit-list { list-style: none; margin: 1.5rem 0; }
+  .benefit-list li {
+    display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; font-size: 14px; color: var(--text);
+  }
+  .benefit-list li.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 13px; color: var(--text-muted); padding-top: 0; padding-bottom: 14px; }
+  .benefit-check { color: var(--teal); font-weight: 700; flex-shrink: 0; }
+
+  .membership-card {
+    background: var(--white); border-radius: 12px; padding: 2.5rem; text-align: center;
+    box-shadow: 0 10px 40px rgba(13,43,78,0.1); border-top: 4px solid var(--gold);
+  }
+  .membership-card .icon { font-size: 40px; margin-bottom: 1rem; }
+  .membership-card h3 { font-size: 18px; font-weight: 800; color: var(--navy); margin-bottom: 8px; font-family: 'Playfair Display', serif; }
+  .membership-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 14px; color: var(--text-muted); margin-bottom: 1.25rem; }
+  .membership-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7; }
+  .membership-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
+
+  /* LEADERSHIP */
+  .leadership-section { background: var(--white); }
+  .leader-card {
+    display: flex; align-items: center; gap: 1.75rem; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 12px; padding: 2rem; max-width: 720px; margin: 0 auto; transition: border-color 0.2s;
+  }
+  .leader-card:hover { border-color: var(--teal); }
+  .leader-avatar {
+    width: 84px; height: 84px; border-radius: 50%; background: var(--navy);
+    display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 800; color: var(--gold); flex-shrink: 0; border: 3px solid var(--gold);
+  }
+  .leader-info h3 { font-size: 17px; font-weight: 800; color: var(--navy); margin-bottom: 3px; }
+  .leader-info .role { font-size: 13px; color: var(--teal); font-weight: 600; margin-bottom: 2px; }
+  .leader-info .role-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); opacity: 0.8; margin-bottom: 6px; }
+  .leader-info .credentials { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
+  .leader-info .credentials.ka { font-family: 'Noto Sans Georgian', sans-serif; }
+
+  /* CONTACT / FOOTER CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); color: var(--white); text-align: center;
+  }
+  .cta-section h2 { color: var(--white); }
+  .cta-section .h2-ka { color: rgba(255,255,255,0.55); }
+  .cta-section p { color: rgba(255,255,255,0.75); max-width: 600px; margin: 1rem auto 2rem; font-size: 15px; line-height: 1.8; }
+  .cta-section p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 14px; }
+
+  /* FOOTER */
+  footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; }
+  .footer-brand p { font-size: 12px; line-height: 1.65; color: rgba(255,255,255,0.5); max-width: 280px; margin-top: 8px; }
+  .footer-brand p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 11px; }
+  .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 7px; }
+  .footer-col ul a { font-size: 12.5px; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--white); }
+  .footer-bottom {
+    max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: rgba(255,255,255,0.4);
+    flex-wrap: wrap; gap: 8px;
+  }
+  .footer-social { display: flex; gap: 12px; }
+  .footer-social a {
+    width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.6);
+    text-decoration: none; font-size: 14px; transition: all 0.2s;
+  }
+  .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* LANG VISIBILITY */
+  body.lang-en .only-ka { display: none !important; }
+  body.lang-ka .only-en { display: none !important; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .about-grid, .news-grid, .collab-grid { grid-template-columns: repeat(2, 1fr); }
+    .membership-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .lang-bar, nav { padding: 0 1.25rem; }
+    .nav-links { display: none; }
+    .hero, section { padding: 3rem 1.25rem; }
+    .about-grid, .news-grid, .collab-grid, .footer-inner { grid-template-columns: 1fr; }
+    .leader-card { flex-direction: column; text-align: center; }
+    .hero-stats { gap: 1.5rem; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body class="lang-en">
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" id="btn-ka" onclick="setLang('ka')">ქარ</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <div class="geo-flag"></div>
+    <div>
+      <div class="nav-title">
+        <span class="only-en">Georgian <span>Atherosclerosis Association</span></span>
+        <span class="only-ka" lang="ka">საქართველოს <span>ათეროსკლეროზის ასოციაცია</span></span>
+      </div>
+      <span class="nav-title-sub only-en" lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია</span>
+      <span class="nav-title-sub only-ka">Georgian Atherosclerosis Association</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about"><span class="only-en">About</span><span class="only-ka" lang="ka">ჩვენ შესახებ</span></a></li>
+    <li><a href="#news"><span class="only-en">News</span><span class="only-ka" lang="ka">სიახლეები</span></a></li>
+    <li><a href="#collaborations"><span class="only-en">Collaborations</span><span class="only-ka" lang="ka">თანამშრომლობა</span></a></li>
+    <li><a href="#leadership"><span class="only-en">Leadership</span><span class="only-ka" lang="ka">ხელმძღვანელობა</span></a></li>
+    <li><a href="#contact"><span class="only-en">Contact</span><span class="only-ka" lang="ka">კონტაქტი</span></a></li>
+    <li><a href="#membership" class="nav-cta">
+      <span class="only-en">Become a member</span>
+      <span class="only-ka" lang="ka">გახდით წევრი</span>
+    </a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      🇬🇪
+      <span class="only-en">National Society for Atherosclerosis Research &amp; Prevention</span>
+      <span class="only-ka" lang="ka">ათეროსკლეროზის კვლევისა და პრევენციის ეროვნული საზოგადოება</span>
+    </div>
+
+    <h1>
+      <span class="only-en">Welcome to the <em>Georgian Atherosclerosis</em> Association</span>
+      <span class="only-ka" lang="ka">მოგესალმებათ <em>საქართველოს ათეროსკლეროზის</em> ასოციაცია</span>
+    </h1>
+
+    <div class="hero-ka only-en" lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია</div>
+    <div class="hero-ka only-ka">Georgian Atherosclerosis Association</div>
+
+    <p class="hero-sub only-en">
+      We are a community of cardiologists, lipidologists, internists, and researchers working together to advance the understanding, prevention, and treatment of atherosclerosis and cardiovascular disease in Georgia — in close collaboration with the European Atherosclerosis Society (EAS).
+    </p>
+    <p class="hero-sub only-ka" lang="ka">
+      ჩვენ ვართ კარდიოლოგების, ლიპიდოლოგების, ინტერნისტებისა და მკვლევარების საზოგადოება, რომლებიც ერთობლივად ვმუშაობთ ათეროსკლეროზისა და გულ-სისხლძარღვთა დაავადებების შესახებ ცოდნის გაღრმავებაზე, პრევენციასა და მკურნალობაზე საქართველოში — ევროპის ათეროსკლეროზის საზოგადოებასთან (EAS) მჭიდრო თანამშრომლობით.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#membership" class="btn-primary">
+        <span class="only-en">Become a member</span>
+        <span class="only-ka" lang="ka">გახდით წევრი</span>
+      </a>
+      <a href="#about" class="btn-outline">
+        <span class="only-en">Learn more</span>
+        <span class="only-ka" lang="ka">გაიგეთ მეტი</span>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">EAS</span>
+        <span class="stat-label only-en">Affiliated national society</span>
+        <span class="stat-label only-ka" lang="ka">EAS-ის ეროვნული საზოგადოება</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">LCN</span>
+        <span class="stat-label only-en">Coordinating Georgia's Lipid Clinic Network</span>
+        <span class="stat-label only-ka" lang="ka">საქართველოს ლიპიდური კლინიკების ქსელის კოორდინაცია</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2026</span>
+        <span class="stat-label only-en">First national CVD report</span>
+        <span class="stat-label only-ka" lang="ka">პირველი ეროვნული CVD ანგარიში</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">
+        <span class="only-en">About us</span>
+        <span class="only-ka" lang="ka">ჩვენ შესახებ</span>
+      </div>
+      <h2>
+        <span class="only-en">What we do</span>
+        <span class="only-ka" lang="ka">რას ვაკეთებთ</span>
+      </h2>
+      <div class="h2-ka only-en" lang="ka">რას ვაკეთებთ</div>
+      <div class="h2-ka only-ka">What we do</div>
+      <div class="divider"></div>
+      <p class="only-en">
+        The Georgian Atherosclerosis Association brings together healthcare professionals and researchers dedicated to reducing the burden of cardiovascular disease in Georgia through science, education, and policy engagement.
+      </p>
+      <p class="only-ka ka" lang="ka">
+        საქართველოს ათეროსკლეროზის ასოციაცია აერთიანებს სამედიცინო პროფესიონალებსა და მკვლევარებს, რომლებიც ეძღვნებიან საქართველოში გულ-სისხლძარღვთა დაავადებების ტვირთის შემცირებას მეცნიერების, განათლებისა და პოლიტიკის ჩართულობის გზით.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🔬</div>
+        <h3><span class="only-en">Research</span><span class="only-ka" lang="ka">კვლევა</span></h3>
+        <div class="h3-ka only-en" lang="ka">კვლევა</div>
+        <p class="only-en">Promoting and supporting research into the causes, prevention, and treatment of atherosclerosis in the Georgian population.</p>
+        <p class="only-ka ka" lang="ka">ათეროსკლეროზის მიზეზების, პრევენციისა და მკურნალობის კვლევის ხელშეწყობა საქართველოს პოპულაციაში.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🎓</div>
+        <h3><span class="only-en">Education</span><span class="only-ka" lang="ka">განათლება</span></h3>
+        <div class="h3-ka only-en" lang="ka">განათლება</div>
+        <p class="only-en">Delivering CME-accredited courses, webinars, and conferences for Georgian physicians on lipid management and CVD prevention.</p>
+        <p class="only-ka ka" lang="ka">CME-აკრედიტებული კურსების, ვებინარებისა და კონფერენციების ჩატარება ლიპიდების მართვისა და CVD პრევენციის შესახებ.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🏛️</div>
+        <h3><span class="only-en">Policy</span><span class="only-ka" lang="ka">პოლიტიკა</span></h3>
+        <div class="h3-ka only-en" lang="ka">პოლიტიკა</div>
+        <p class="only-en">Advocating to the Ministry of Health and NCDC for evidence-based national cardiovascular prevention policy.</p>
+        <p class="only-ka ka" lang="ka">ჯანდაცვის სამინისტროსა და NCDC-ის წინაშე მტკიცებულებებზე დაფუძნებული ეროვნული CVD პრევენციის პოლიტიკის ადვოკატირება.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🌍</div>
+        <h3><span class="only-en">International ties</span><span class="only-ka" lang="ka">საერთაშორისო კავშირები</span></h3>
+        <div class="h3-ka only-en" lang="ka">საერთაშორისო კავშირები</div>
+        <p class="only-en">Representing Georgia within the European Atherosclerosis Society and its Lipid Clinic Network.</p>
+        <p class="only-ka ka" lang="ka">საქართველოს წარმომადგენლობა ევროპულ ათეროსკლეროზის საზოგადოებასა და მის ლიპიდურ კლინიკების ქსელში.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news-section" id="news">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">
+        <span class="only-en">Latest news</span>
+        <span class="only-ka" lang="ka">სიახლეები</span>
+      </div>
+      <h2>
+        <span class="only-en">From the Association</span>
+        <span class="only-ka" lang="ka">ასოციაციის სიახლეები</span>
+      </h2>
+      <div class="h2-ka only-en" lang="ka">ასოციაციის სიახლეები</div>
+      <div class="h2-ka only-ka">From the Association</div>
+      <div class="divider"></div>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-img">📄</div>
+        <div class="news-body">
+          <div class="news-date only-en">2026</div>
+          <div class="news-date only-ka" lang="ka">2026</div>
+          <h3><span class="only-en">First National CVD Report launched</span><span class="only-ka" lang="ka">პირველი ეროვნული CVD ანგარიში</span></h3>
+          <div class="h3-ka only-en" lang="ka">პირველი ეროვნული CVD ანგარიში გამოქვეყნდა</div>
+          <p class="only-en">"State of Cardiovascular Health in Georgia" brings together national data and policy recommendations for the first time.</p>
+          <p class="only-ka ka" lang="ka">„გულ-სისხლძარღვთა ჯანმრთელობის მდგომარეობა საქართველოში" — პირველად აერთიანებს ეროვნულ მონაცემებსა და პოლიტიკის რეკომენდაციებს.</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">🇬🇪</div>
+        <div class="news-body">
+          <div class="news-date only-en">2025</div>
+          <div class="news-date only-ka" lang="ka">2025</div>
+          <h3><span class="only-en">Georgian-LCN joins EAS network</span><span class="only-ka" lang="ka">Georgian-LCN შეუერთდა EAS ქსელს</span></h3>
+          <div class="h3-ka only-en" lang="ka">Georgian-LCN შეუერთდა EAS ქსელს</div>
+          <p class="only-en">Georgia formally established its national chapter of the EAS Lipid Clinic Network, coordinating lipid clinics nationwide.</p>
+          <p class="only-ka ka" lang="ka">საქართველომ ფორმალურად დააარსა EAS ლიპიდური კლინიკების ქსელის ეროვნული განყოფილება.</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">❤️</div>
+        <div class="news-body">
+          <div class="news-date only-en">29 SEPTEMBER</div>
+          <div class="news-date only-ka" lang="ka">29 სექტემბერი</div>
+          <h3><span class="only-en">World Heart Day campaign</span><span class="only-ka" lang="ka">გულის მსოფლიო დღის კამპანია</span></h3>
+          <div class="h3-ka only-en" lang="ka">გულის მსოფლიო დღის კამპანია</div>
+          <p class="only-en">Join our annual free cardiovascular screening events across Tbilisi and partner cities.</p>
+          <p class="only-ka ka" lang="ka">შემოგვიერთდით ჩვენს წლიურ უფასო კარდიოვასკულარული სკრინინგის ღონისძიებებში თბილისსა და პარტნიორ ქალაქებში.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLABORATIONS -->
+<section class="collab-section" id="collaborations">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">
+        <span class="only-en">Collaborations</span>
+        <span class="only-ka" lang="ka">თანამშრომლობა</span>
+      </div>
+      <h2>
+        <span class="only-en">Our networks & partners</span>
+        <span class="only-ka" lang="ka">ჩვენი ქსელები და პარტნიორები</span>
+      </h2>
+      <div class="h2-ka only-en" lang="ka">ჩვენი ქსელები და პარტნიორები</div>
+      <div class="h2-ka only-ka">Our networks & partners</div>
+      <div class="divider"></div>
+      <p class="only-en">The Association coordinates and participates in several national and international initiatives.</p>
+      <p class="only-ka ka" lang="ka">ასოციაცია კოორდინირებს და მონაწილეობს რამდენიმე ეროვნულ და საერთაშორისო ინიციატივაში.</p>
+    </div>
+
+    <div class="collab-grid">
+      <div class="collab-card">
+        <span class="collab-tag only-en">National</span>
+        <span class="collab-tag only-ka" lang="ka">ეროვნული</span>
+        <h3>Georgian Lipid Clinic Network</h3>
+        <div class="h3-ka only-en" lang="ka">ქართული ლიპიდური კლინიკების ქსელი</div>
+        <div class="h3-ka only-ka">Georgian Lipid Clinic Network</div>
+        <p class="only-en">Georgia's national chapter of the EAS Lipid Clinic Network — coordinating lipid clinics, registries, and education nationwide.</p>
+        <p class="only-ka ka" lang="ka">EAS ლიპიდური კლინიკების ქსელის ეროვნული განყოფილება საქართველოში — კლინიკების, რეგისტრებისა და განათლების კოორდინაცია.</p>
+        <a class="collab-link" href="georgian-lcn.html">
+          <span class="only-en">Visit Georgian-LCN →</span>
+          <span class="only-ka" lang="ka">ეწვიეთ Georgian-LCN-ს →</span>
+        </a>
+      </div>
+      <div class="collab-card">
+        <span class="collab-tag only-en">International</span>
+        <span class="collab-tag only-ka" lang="ka">საერთაშორისო</span>
+        <h3>European Atherosclerosis Society</h3>
+        <div class="h3-ka only-en" lang="ka">ევროპის ათეროსკლეროზის საზოგადოება EAS</div>
+        <div class="h3-ka only-ka">European Atherosclerosis Society</div>
+        <p class="only-en">The Georgian Atherosclerosis Association is a national member society of the EAS, sharing knowledge and resources across Europe.</p>
+        <p class="only-ka ka" lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია არის EAS-ის ეროვნული წევრი საზოგადოება.</p>
+        <a class="collab-link" href="https://eas-society.org" target="_blank">
+          <span class="only-en">Visit EAS →</span>
+          <span class="only-ka" lang="ka">ეწვიეთ EAS-ს →</span>
+        </a>
+      </div>
+      <div class="collab-card">
+        <span class="collab-tag only-en">Government</span>
+        <span class="collab-tag only-ka" lang="ka">სამთავრობო</span>
+        <h3>Ministry of Health & NCDC</h3>
+        <div class="h3-ka only-en" lang="ka">ჯანდაცვის სამინისტრო და NCDC</div>
+        <div class="h3-ka only-ka">Ministry of Health & NCDC</div>
+        <p class="only-en">Working with national health authorities on cardiovascular prevention strategy, screening programmes, and policy.</p>
+        <p class="only-ka ka" lang="ka">თანამშრომლობა ეროვნულ ჯანდაცვის ორგანოებთან CVD პრევენციის სტრატეგიასა და პოლიტიკაზე.</p>
+        <a class="collab-link" href="#contact">
+          <span class="only-en">Get involved →</span>
+          <span class="only-ka" lang="ka">ჩაერთეთ →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="membership-section" id="membership">
+  <div class="section-inner">
+    <div class="membership-grid">
+      <div class="membership-text">
+        <div class="section-label">
+          <span class="only-en">Membership</span>
+          <span class="only-ka" lang="ka">წევრობა</span>
+        </div>
+        <h2>
+          <span class="only-en">Join the Association</span>
+          <span class="only-ka" lang="ka">შეუერთდით ასოციაციას</span>
+        </h2>
+        <div class="h2-ka only-en" lang="ka">შეუერთდით ასოციაციას</div>
+        <div class="h2-ka only-ka">Join the Association</div>
+        <div class="divider" style="margin-left:0;"></div>
+
+        <p class="only-en">Membership is open to physicians, researchers, and other healthcare professionals working in cardiovascular prevention, lipidology, and related fields in Georgia.</p>
+        <p class="only-ka ka" lang="ka">წევრობა ღია არის ექიმებისთვის, მკვლევარებისა და სხვა სამედიცინო პროფესიონალებისთვის, რომლებიც საქართველოში მუშაობენ კარდიოვასკულარული პრევენციის, ლიპიდოლოგიის და მონათესავე სფეროებში.</p>
+
+        <ul class="benefit-list">
+          <li><span class="benefit-check">✓</span><span class="only-en">Access to national and EAS educational resources, webinars, and CME courses</span></li>
+          <li class="ka only-en" lang="ka">ეროვნული და EAS საგანმანათლებლო რესურსების, ვებინარებისა და CME კურსებზე წვდომა</li>
+          <li><span class="benefit-check">✓</span><span class="only-en">Participation in national conferences and World Heart Day activities</span></li>
+          <li class="ka only-en" lang="ka">მონაწილეობა ეროვნულ კონფერენციებსა და გულის მსოფლიო დღის ღონისძიებებში</li>
+          <li><span class="benefit-check">✓</span><span class="only-en">Opportunities for research collaboration and co-authorship</span></li>
+          <li class="ka only-en" lang="ka">კვლევითი თანამშრომლობისა და თანაავტორობის შესაძლებლობები</li>
+          <li><span class="benefit-check">✓</span><span class="only-en">Network with colleagues across Georgia and the EAS community</span></li>
+          <li class="ka only-en" lang="ka">კავშირი კოლეგებთან საქართველოსა და EAS საზოგადოებაში</li>
+
+          <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>ეროვნული და EAS საგანმანათლებლო რესურსების, ვებინარებისა და CME კურსებზე წვდომა</li>
+          <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>მონაწილეობა ეროვნულ კონფერენციებსა და გულის მსოფლიო დღის ღონისძიებებში</li>
+          <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>კვლევითი თანამშრომლობისა და თანაავტორობის შესაძლებლობები</li>
+          <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>კავშირი კოლეგებთან საქართველოსა და EAS საზოგადოებაში</li>
+        </ul>
+      </div>
+
+      <div class="membership-card">
+        <div class="icon">🤝</div>
+        <h3><span class="only-en">Become a Member</span><span class="only-ka" lang="ka">გახდით წევრი</span></h3>
+        <div class="h3-ka only-en" lang="ka">გახდით ასოციაციის წევრი</div>
+        <div class="h3-ka only-ka">Become a Member</div>
+        <p class="only-en">Submit your interest and a member of our team will contact you with next steps and application details.</p>
+        <p class="only-ka ka" lang="ka">გამოაგზავნეთ თქვენი მოთხოვნა და ჩვენი გუნდის წევრი დაგიკავშირდებათ შემდეგი ნაბიჯებისთვის.</p>
+        <a href="#contact" class="btn-primary" style="width:100%;">
+          <span class="only-en">Contact us</span>
+          <span class="only-ka" lang="ka">დაგვიკავშირდით</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="leadership-section" id="leadership">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-label">
+        <span class="only-en">Leadership</span>
+        <span class="only-ka" lang="ka">ხელმძღვანელობა</span>
+      </div>
+      <h2>
+        <span class="only-en">President of the Association</span>
+        <span class="only-ka" lang="ka">ასოციაციის პრეზიდენტი</span>
+      </h2>
+      <div class="h2-ka only-en" lang="ka">ასოციაციის პრეზიდენტი</div>
+      <div class="h2-ka only-ka">President of the Association</div>
+      <div class="divider"></div>
+    </div>
+
+    <div class="leader-card">
+      <div class="leader-avatar">TG</div>
+      <div class="leader-info">
+        <h3>Prof. Tea Gamezardashvili · პროფ. თეა გამეზარდაშვილი</h3>
+        <div class="role only-en">President, Georgian Atherosclerosis Association</div>
+        <div class="role only-ka" lang="ka">საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი</div>
+        <div class="role-ka only-en" lang="ka">ეროვნული კოორდინატორი, EAS ლიპიდური კლინიკების ქსელი</div>
+        <div class="role-ka only-ka">National Coordinator, EAS Lipid Clinic Network — Georgia</div>
+        <div class="credentials">
+          <span class="only-en">MD, PhD, MHA, FACC · Clinical Manager, REMEDICAL Hospital, Tbilisi</span>
+          <span class="only-ka ka" lang="ka">MD, PhD, MHA, FACC · REMEDICAL საავადმყოფოს კლინიკური მენეჯერი, თბილისი</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="section-inner">
+    <div class="section-label">
+      <span class="only-en">Get in touch</span>
+      <span class="only-ka" lang="ka">დაგვიკავშირდით</span>
+    </div>
+    <h2>
+      <span class="only-en">Let's work together for healthier hearts in Georgia</span>
+      <span class="only-ka" lang="ka">ერთად — ჯანმრთელი გულისთვის საქართველოში</span>
+    </h2>
+    <div class="h2-ka only-en" lang="ka">ერთად — ჯანმრთელი გულისთვის საქართველოში</div>
+    <div class="h2-ka only-ka">Let's work together for healthier hearts in Georgia</div>
+    <p class="only-en">Whether you're a clinician interested in joining the network, a policymaker, or an international partner — we'd love to hear from you.</p>
+    <p class="only-ka ka" lang="ka">თუ თქვენ ხართ კლინიცისტი, რომელსაც ქსელში ჩართვა აინტერესებთ, პოლიტიკის შემქმნელი, ან საერთაშორისო პარტნიორი — სიამოვნებით მოვისმენთ თქვენგან.</p>
+
+    <form id="gaa-form" action="https://formspree.io/f/xvznyglo" method="POST" style="max-width:480px; margin:0 auto 1.5rem; text-align:left; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:10px; padding:1.75rem;">
+      <div style="margin-bottom:0.9rem;">
+        <label for="gaa-name" style="display:block; font-size:12px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:4px;">
+          <span class="only-en">Your name</span><span class="only-ka" lang="ka">თქვენი სახელი</span>
+        </label>
+        <input type="text" id="gaa-name" name="name" required style="width:100%; padding:10px 12px; border:1px solid rgba(255,255,255,0.25); border-radius:5px; background:rgba(255,255,255,0.95); font-size:14px; font-family:'Inter',sans-serif;">
+      </div>
+      <div style="margin-bottom:0.9rem;">
+        <label for="gaa-email" style="display:block; font-size:12px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:4px;">
+          <span class="only-en">Email address</span><span class="only-ka" lang="ka">ელ-ფოსტა</span>
+        </label>
+        <input type="email" id="gaa-email" name="email" required style="width:100%; padding:10px 12px; border:1px solid rgba(255,255,255,0.25); border-radius:5px; background:rgba(255,255,255,0.95); font-size:14px; font-family:'Inter',sans-serif;">
+      </div>
+      <div style="margin-bottom:0.9rem;">
+        <label for="gaa-message" style="display:block; font-size:12px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:4px;">
+          <span class="only-en">Message</span><span class="only-ka" lang="ka">შეტყობინება</span>
+        </label>
+        <textarea id="gaa-message" name="message" required style="width:100%; min-height:90px; padding:10px 12px; border:1px solid rgba(255,255,255,0.25); border-radius:5px; background:rgba(255,255,255,0.95); font-size:14px; font-family:'Inter',sans-serif; resize:vertical;"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New message from Georgian Atherosclerosis Association website">
+      <button type="submit" class="btn-primary" style="width:100%; border:none; cursor:pointer;">
+        <span class="only-en">Send message</span><span class="only-ka" lang="ka">გაგზავნა</span>
+      </button>
+      <p id="gaa-form-status" style="margin-top:10px; font-size:13px; color:rgba(255,255,255,0.85);"></p>
+    </form>
+
+    <div class="hero-actions">
+      <a href="mailto:infoathero@gmail.com" class="btn-outline">
+        <span class="only-en">Or email us directly</span>
+        <span class="only-ka" lang="ka">ან მოგვწერეთ პირდაპირ</span>
+      </a>
+      <a href="https://www.linkedin.com/in/tea-gamezardashvili-3353ba68/" target="_blank" class="btn-outline">
+        <span class="only-en">LinkedIn</span>
+        <span class="only-ka" lang="ka">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-title" style="color:#fff; font-size:16px;">
+        Georgian <span style="color:var(--gold);">Atherosclerosis Association</span>
+      </div>
+      <p class="only-en">A national society dedicated to advancing the prevention, diagnosis, and treatment of atherosclerosis and cardiovascular disease in Georgia, in collaboration with the EAS.</p>
+      <p class="only-ka ka" lang="ka">ეროვნული საზოგადოება, რომელიც ეძღვნება ათეროსკლეროზისა და გულ-სისხლძარღვთა დაავადებების პრევენციის, დიაგნოსტიკისა და მკურნალობის განვითარებას საქართველოში, EAS-თან თანამშრომლობით.</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="only-en">Association</span><span class="only-ka" lang="ka">ასოციაცია</span></h4>
+      <ul>
+        <li><a href="#about"><span class="only-en">About</span><span class="only-ka" lang="ka">ჩვენ შესახებ</span></a></li>
+        <li><a href="#news"><span class="only-en">News</span><span class="only-ka" lang="ka">სიახლეები</span></a></li>
+        <li><a href="#leadership"><span class="only-en">Leadership</span><span class="only-ka" lang="ka">ხელმძღვანელობა</span></a></li>
+        <li><a href="#membership"><span class="only-en">Membership</span><span class="only-ka" lang="ka">წევრობა</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4><span class="only-en">Networks</span><span class="only-ka" lang="ka">ქსელები</span></h4>
+      <ul>
+        <li><a href="georgian-lcn.html">Georgian-LCN</a></li>
+        <li><a href="https://eas-society.org" target="_blank">EAS</a></li>
+        <li><a href="https://eas-society.org/collaborations/lcn/" target="_blank">EAS-LCN</a></li>
+        <li><a href="https://eas-society.org/academy/" target="_blank">EAS Academy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4><span class="only-en">Contact</span><span class="only-ka" lang="ka">კონტაქტი</span></h4>
+      <ul>
+        <li><span class="only-en">Tbilisi, Georgia</span><span class="only-ka" lang="ka">თბილისი, საქართველო</span></li>
+        <li><a href="mailto:info@georgian-atherosclerosis.ge">info@georgian-atherosclerosis.ge</a></li>
+        <li><a href="https://www.linkedin.com/in/tea-gamezardashvili-3353ba68/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Georgian Atherosclerosis Association · <span lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია</span></span>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Instagram">ig</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-ka').classList.toggle('active', lang === 'ka');
+  document.documentElement.lang = lang === 'ka' ? 'ka' : 'en';
+  localStorage.setItem('gaa-lang', lang);
+}
+(function() {
+  var saved = localStorage.getItem('gaa-lang');
+  if (saved === 'ka') setLang('ka');
+})();
+
+document.getElementById('gaa-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = e.target;
+  var statusEl = document.getElementById('gaa-form-status');
+  var isKa = document.body.classList.contains('lang-ka');
+  var name = document.getElementById('gaa-name').value.trim();
+
+  statusEl.style.color = 'rgba(255,255,255,0.85)';
+  statusEl.textContent = isKa ? 'იგზავნება...' : 'Sending...';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(response) {
+    if (response.ok) {
+      statusEl.style.color = '#C8922A';
+      statusEl.textContent = isKa
+        ? 'გმადლობთ, ' + name + '! თქვენი შეტყობინება გაიგზავნა.'
+        : 'Thank you, ' + name + '! Your message has been sent.';
+      form.reset();
+    } else {
+      statusEl.style.color = '#ff8a8a';
+      statusEl.textContent = isKa ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა.' : 'Something went wrong. Please try again.';
+    }
+  }).catch(function() {
+    statusEl.style.color = '#ff8a8a';
+    statusEl.textContent = isKa ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა.' : 'Something went wrong. Please try again.';
+  });
+});
+</script>
+</body>
+</html>
