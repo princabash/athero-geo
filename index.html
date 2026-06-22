@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --navy: #0D2B4E;
     --navy-mid: #1A3F6F;
@@ -23,11 +23,11 @@
     --white: #FFFFFF;
     --red-geo: #D42B2B;
   }
-
+ 
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; font-size: 16px; color: var(--text); background: var(--bg); line-height: 1.7; }
   [lang="ka"], .ka { font-family: 'Noto Sans Georgian', 'Inter', sans-serif; }
-
+ 
   /* LANG BAR */
   .lang-bar {
     background: var(--navy-mid);
@@ -43,7 +43,7 @@
   .lang-btn.active { background: var(--gold); border-color: var(--gold); color: var(--navy); }
   .lang-btn:hover:not(.active) { border-color: rgba(255,255,255,0.5); color: var(--white); }
   .lang-sep { color: rgba(255,255,255,0.2); font-size: 12px; }
-
+ 
   /* NAV */
   nav {
     position: sticky; top: 0; z-index: 100;
@@ -59,11 +59,11 @@
   .geo-flag::before, .geo-flag::after { content: ''; position: absolute; background: var(--red-geo); }
   .geo-flag::before { left: 50%; top: 0; width: 2px; height: 100%; transform: translateX(-50%); }
   .geo-flag::after { top: 50%; left: 0; height: 2px; width: 100%; transform: translateY(-50%); }
-
+ 
   .nav-title { font-weight: 700; font-size: 15px; color: var(--white); letter-spacing: 0.01em; line-height: 1.3; }
   .nav-title span { color: var(--gold); }
   .nav-title-sub { font-family: 'Noto Sans Georgian', sans-serif; font-size: 11px; color: rgba(255,255,255,0.5); display: block; font-weight: 400; }
-
+ 
   .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
   .nav-links a {
     color: rgba(255,255,255,0.78); text-decoration: none; font-size: 13px; font-weight: 500;
@@ -75,7 +75,7 @@
     border-radius: 4px; font-weight: 700 !important;
   }
   .nav-cta:hover { opacity: 0.88; }
-
+ 
   /* HERO */
   .hero {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 55%, #1e5a8a 100%);
@@ -119,7 +119,7 @@
     font-size: 14px; font-weight: 600; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s;
   }
   .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
-
+ 
   .hero-stats {
     display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
     padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.15); max-width: 800px; margin: 0 auto;
@@ -127,7 +127,7 @@
   .stat { display: flex; flex-direction: column; gap: 4px; text-align: center; }
   .stat-num { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 800; color: var(--gold); line-height: 1; }
   .stat-label { font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.03em; max-width: 140px; }
-
+ 
   /* SECTIONS */
   section { padding: 4.5rem 2.5rem; }
   .section-inner { max-width: 1100px; margin: 0 auto; }
@@ -143,7 +143,7 @@
   }
   .divider { width: 48px; height: 3px; background: var(--gold); margin: 0.6rem auto 1.5rem; border-radius: 2px; }
   .section-head p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-top: 1rem; }
-
+ 
   /* ABOUT GRID */
   .about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
   .about-card {
@@ -159,7 +159,7 @@
   .about-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); font-weight: 500; margin-bottom: 8px; }
   .about-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
   .about-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
-
+ 
   /* NEWS */
   .news-section { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -175,14 +175,14 @@
   .news-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); font-weight: 500; margin-bottom: 8px; line-height: 1.5; }
   .news-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
   .news-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
-
+ 
   /* COLLABORATIONS */
   .collab-section { background: var(--navy); color: var(--white); }
   .collab-section h2 { color: var(--white); }
   .collab-section .section-label { color: var(--gold); }
   .collab-section .h2-ka { color: rgba(255,255,255,0.55); }
   .collab-section .section-head p { color: rgba(255,255,255,0.7); }
-
+ 
   .collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   .collab-card {
     border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 1.75rem;
@@ -200,7 +200,7 @@
   .collab-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; }
   .collab-link { font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
   .collab-link:hover { text-decoration: underline; }
-
+ 
   /* MEMBERSHIP */
   .membership-section { background: var(--teal-light); }
   .membership-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
@@ -212,7 +212,7 @@
   }
   .benefit-list li.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 13px; color: var(--text-muted); padding-top: 0; padding-bottom: 14px; }
   .benefit-check { color: var(--teal); font-weight: 700; flex-shrink: 0; }
-
+ 
   .membership-card {
     background: var(--white); border-radius: 12px; padding: 2.5rem; text-align: center;
     box-shadow: 0 10px 40px rgba(13,43,78,0.1); border-top: 4px solid var(--gold);
@@ -222,7 +222,7 @@
   .membership-card .h3-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 14px; color: var(--text-muted); margin-bottom: 1.25rem; }
   .membership-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7; }
   .membership-card p.ka { font-family: 'Noto Sans Georgian', sans-serif; }
-
+ 
   /* LEADERSHIP */
   .leadership-section { background: var(--white); }
   .leader-card {
@@ -240,7 +240,7 @@
   .leader-info .role-ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 12px; color: var(--teal); opacity: 0.8; margin-bottom: 6px; }
   .leader-info .credentials { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
   .leader-info .credentials.ka { font-family: 'Noto Sans Georgian', sans-serif; }
-
+ 
   /* CONTACT / FOOTER CTA */
   .cta-section {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); color: var(--white); text-align: center;
@@ -249,7 +249,7 @@
   .cta-section .h2-ka { color: rgba(255,255,255,0.55); }
   .cta-section p { color: rgba(255,255,255,0.75); max-width: 600px; margin: 1rem auto 2rem; font-size: 15px; line-height: 1.8; }
   .cta-section p.ka { font-family: 'Noto Sans Georgian', sans-serif; font-size: 14px; }
-
+ 
   /* FOOTER */
   footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
   .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; }
@@ -272,11 +272,11 @@
     text-decoration: none; font-size: 14px; transition: all 0.2s;
   }
   .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
-
+ 
   /* LANG VISIBILITY */
   body.lang-en .only-ka { display: none !important; }
   body.lang-ka .only-en { display: none !important; }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .about-grid, .news-grid, .collab-grid { grid-template-columns: repeat(2, 1fr); }
@@ -296,14 +296,14 @@
 </style>
 </head>
 <body class="lang-en">
-
+ 
 <!-- LANG BAR -->
 <div class="lang-bar">
   <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
   <span class="lang-sep">|</span>
   <button class="lang-btn" id="btn-ka" onclick="setLang('ka')">ქარ</button>
 </div>
-
+ 
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">
@@ -322,6 +322,7 @@
     <li><a href="#news"><span class="only-en">News</span><span class="only-ka" lang="ka">სიახლეები</span></a></li>
     <li><a href="#collaborations"><span class="only-en">Collaborations</span><span class="only-ka" lang="ka">თანამშრომლობა</span></a></li>
     <li><a href="#leadership"><span class="only-en">Leadership</span><span class="only-ka" lang="ka">ხელმძღვანელობა</span></a></li>
+    <li><a href="https://academy.athero-geo.com"><span class="only-en">Academy</span><span class="only-ka" lang="ka">აკადემია</span></a></li>
     <li><a href="#contact"><span class="only-en">Contact</span><span class="only-ka" lang="ka">კონტაქტი</span></a></li>
     <li><a href="#membership" class="nav-cta">
       <span class="only-en">Become a member</span>
@@ -329,7 +330,7 @@
     </a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
@@ -338,22 +339,22 @@
       <span class="only-en">National Society for Atherosclerosis Research &amp; Prevention</span>
       <span class="only-ka" lang="ka">ათეროსკლეროზის კვლევისა და პრევენციის ეროვნული საზოგადოება</span>
     </div>
-
+ 
     <h1>
       <span class="only-en">Welcome to the <em>Georgian Atherosclerosis</em> Association</span>
       <span class="only-ka" lang="ka">მოგესალმებათ <em>საქართველოს ათეროსკლეროზის</em> ასოციაცია</span>
     </h1>
-
+ 
     <div class="hero-ka only-en" lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია</div>
     <div class="hero-ka only-ka">Georgian Atherosclerosis Association</div>
-
+ 
     <p class="hero-sub only-en">
       We are a community of cardiologists, lipidologists, internists, and researchers working together to advance the understanding, prevention, and treatment of atherosclerosis and cardiovascular disease in Georgia — in close collaboration with the European Atherosclerosis Society (EAS).
     </p>
     <p class="hero-sub only-ka" lang="ka">
       ჩვენ ვართ კარდიოლოგების, ლიპიდოლოგების, ინტერნისტებისა და მკვლევარების საზოგადოება, რომლებიც ერთობლივად ვმუშაობთ ათეროსკლეროზისა და გულ-სისხლძარღვთა დაავადებების შესახებ ცოდნის გაღრმავებაზე, პრევენციასა და მკურნალობაზე საქართველოში — ევროპის ათეროსკლეროზის საზოგადოებასთან (EAS) მჭიდრო თანამშრომლობით.
     </p>
-
+ 
     <div class="hero-actions">
       <a href="#membership" class="btn-primary">
         <span class="only-en">Become a member</span>
@@ -364,7 +365,7 @@
         <span class="only-ka" lang="ka">გაიგეთ მეტი</span>
       </a>
     </div>
-
+ 
     <div class="hero-stats">
       <div class="stat">
         <span class="stat-num">EAS</span>
@@ -384,7 +385,7 @@
     </div>
   </div>
 </header>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
@@ -407,7 +408,7 @@
         საქართველოს ათეროსკლეროზის ასოციაცია აერთიანებს სამედიცინო პროფესიონალებსა და მკვლევარებს, რომლებიც ეძღვნებიან საქართველოში გულ-სისხლძარღვთა დაავადებების ტვირთის შემცირებას მეცნიერების, განათლებისა და პოლიტიკის ჩართულობის გზით.
       </p>
     </div>
-
+ 
     <div class="about-grid">
       <div class="about-card">
         <div class="about-icon">🔬</div>
@@ -440,7 +441,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- NEWS -->
 <section class="news-section" id="news">
   <div class="section-inner">
@@ -457,7 +458,7 @@
       <div class="h2-ka only-ka">From the Association</div>
       <div class="divider"></div>
     </div>
-
+ 
     <div class="news-grid">
       <div class="news-card">
         <div class="news-img">📄</div>
@@ -495,7 +496,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- COLLABORATIONS -->
 <section class="collab-section" id="collaborations">
   <div class="section-inner">
@@ -514,7 +515,7 @@
       <p class="only-en">The Association coordinates and participates in several national and international initiatives.</p>
       <p class="only-ka ka" lang="ka">ასოციაცია კოორდინირებს და მონაწილეობს რამდენიმე ეროვნულ და საერთაშორისო ინიციატივაში.</p>
     </div>
-
+ 
     <div class="collab-grid">
       <div class="collab-card">
         <span class="collab-tag only-en">National</span>
@@ -558,7 +559,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- MEMBERSHIP -->
 <section class="membership-section" id="membership">
   <div class="section-inner">
@@ -575,10 +576,10 @@
         <div class="h2-ka only-en" lang="ka">შეუერთდით ასოციაციას</div>
         <div class="h2-ka only-ka">Join the Association</div>
         <div class="divider" style="margin-left:0;"></div>
-
+ 
         <p class="only-en">Membership is open to physicians, researchers, and other healthcare professionals working in cardiovascular prevention, lipidology, and related fields in Georgia.</p>
         <p class="only-ka ka" lang="ka">წევრობა ღია არის ექიმებისთვის, მკვლევარებისა და სხვა სამედიცინო პროფესიონალებისთვის, რომლებიც საქართველოში მუშაობენ კარდიოვასკულარული პრევენციის, ლიპიდოლოგიის და მონათესავე სფეროებში.</p>
-
+ 
         <ul class="benefit-list">
           <li><span class="benefit-check">✓</span><span class="only-en">Access to national and EAS educational resources, webinars, and CME courses</span></li>
           <li class="ka only-en" lang="ka">ეროვნული და EAS საგანმანათლებლო რესურსების, ვებინარებისა და CME კურსებზე წვდომა</li>
@@ -588,14 +589,14 @@
           <li class="ka only-en" lang="ka">კვლევითი თანამშრომლობისა და თანაავტორობის შესაძლებლობები</li>
           <li><span class="benefit-check">✓</span><span class="only-en">Network with colleagues across Georgia and the EAS community</span></li>
           <li class="ka only-en" lang="ka">კავშირი კოლეგებთან საქართველოსა და EAS საზოგადოებაში</li>
-
+ 
           <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>ეროვნული და EAS საგანმანათლებლო რესურსების, ვებინარებისა და CME კურსებზე წვდომა</li>
           <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>მონაწილეობა ეროვნულ კონფერენციებსა და გულის მსოფლიო დღის ღონისძიებებში</li>
           <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>კვლევითი თანამშრომლობისა და თანაავტორობის შესაძლებლობები</li>
           <li class="only-ka" lang="ka"><span class="benefit-check">✓</span>კავშირი კოლეგებთან საქართველოსა და EAS საზოგადოებაში</li>
         </ul>
       </div>
-
+ 
       <div class="membership-card">
         <div class="icon">🤝</div>
         <h3><span class="only-en">Become a Member</span><span class="only-ka" lang="ka">გახდით წევრი</span></h3>
@@ -611,7 +612,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- LEADERSHIP -->
 <section class="leadership-section" id="leadership">
   <div class="section-inner">
@@ -628,7 +629,7 @@
       <div class="h2-ka only-ka">President of the Association</div>
       <div class="divider"></div>
     </div>
-
+ 
     <div class="leader-card">
       <div class="leader-avatar">TG</div>
       <div class="leader-info">
@@ -645,7 +646,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <div class="section-inner">
@@ -661,7 +662,7 @@
     <div class="h2-ka only-ka">Let's work together for healthier hearts in Georgia</div>
     <p class="only-en">Whether you're a clinician interested in joining the network, a policymaker, or an international partner — we'd love to hear from you.</p>
     <p class="only-ka ka" lang="ka">თუ თქვენ ხართ კლინიცისტი, რომელსაც ქსელში ჩართვა აინტერესებთ, პოლიტიკის შემქმნელი, ან საერთაშორისო პარტნიორი — სიამოვნებით მოვისმენთ თქვენგან.</p>
-
+ 
     <form id="gaa-form" action="https://formspree.io/f/xvznyglo" method="POST" style="max-width:480px; margin:0 auto 1.5rem; text-align:left; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:10px; padding:1.75rem;">
       <div style="margin-bottom:0.9rem;">
         <label for="gaa-name" style="display:block; font-size:12px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:4px;">
@@ -687,7 +688,7 @@
       </button>
       <p id="gaa-form-status" style="margin-top:10px; font-size:13px; color:rgba(255,255,255,0.85);"></p>
     </form>
-
+ 
     <div class="hero-actions">
       <a href="mailto:infoathero@gmail.com" class="btn-outline">
         <span class="only-en">Or email us directly</span>
@@ -700,7 +701,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -724,6 +725,7 @@
       <h4><span class="only-en">Networks</span><span class="only-ka" lang="ka">ქსელები</span></h4>
       <ul>
         <li><a href="georgian-lcn.html">Georgian-LCN</a></li>
+        <li><a href="https://academy.athero-geo.com"><span class="only-en">CMEA Academy</span><span class="only-ka" lang="ka">CMEA აკადემია</span></a></li>
         <li><a href="https://eas-society.org" target="_blank">EAS</a></li>
         <li><a href="https://eas-society.org/collaborations/lcn/" target="_blank">EAS-LCN</a></li>
         <li><a href="https://eas-society.org/academy/" target="_blank">EAS Academy</a></li>
@@ -747,7 +749,7 @@
     </div>
   </div>
 </footer>
-
+ 
 <script>
 function setLang(lang) {
   document.body.className = 'lang-' + lang;
@@ -760,17 +762,17 @@ function setLang(lang) {
   var saved = localStorage.getItem('gaa-lang');
   if (saved === 'ka') setLang('ka');
 })();
-
+ 
 document.getElementById('gaa-form').addEventListener('submit', function(e) {
   e.preventDefault();
   var form = e.target;
   var statusEl = document.getElementById('gaa-form-status');
   var isKa = document.body.classList.contains('lang-ka');
   var name = document.getElementById('gaa-name').value.trim();
-
+ 
   statusEl.style.color = 'rgba(255,255,255,0.85)';
   statusEl.textContent = isKa ? 'იგზავნება...' : 'Sending...';
-
+ 
   fetch(form.action, {
     method: 'POST',
     body: new FormData(form),
