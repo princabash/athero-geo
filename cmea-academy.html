@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">CardioMetabolic Excellence Academy Georgia | CMEA</title>
+<meta name="description" content="CardioMetabolic Excellence Academy Georgia — training the region's next generation of cardiometabolic specialists through accredited courses, case-based learning, and a multi-year Young Fellows programme.">
+<style>
+  @font-face {
+    font-family: 'Sylfaen';
+    src: local('Sylfaen');
+  }
+
+  :root {
+    --navy: #0D2B4E;
+    --blue: #1A3F6F;
+    --teal: #0E7C7B;
+    --gold: #C9A24B;
+    --gold-deep: #A6822F;
+    --parchment: #F7F5F0;
+    --parchment-dark: #EFEAE0;
+    --ink: #1C2530;
+    --ink-soft: #4A5568;
+    --line: #DCD5C5;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #F7F5F0;
+    color: #1C2530;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html[lang="ka"] body,
+  html[lang="ka"] h1,
+  html[lang="ka"] h2,
+  html[lang="ka"] h3,
+  html[lang="ka"] h4,
+  html[lang="ka"] .eyebrow,
+  html[lang="ka"] .seal-text {
+    font-family: 'Sylfaen', Arial, serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #0D2B4E;
+    letter-spacing: 0.01em;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  img { max-width: 100%; display: block; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ===== Language toggle ===== */
+  [data-en] html[lang="ka"] [data-en],
+  html[lang="ka"] [data-en] { display: none !important; }
+  html[lang="en"] [data-ka] { display: none !important; }
+
+  /* ===== Header ===== */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247, 245, 240, 0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .brand-text .full {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: var(--navy);
+    letter-spacing: 0.01em;
+  }
+
+  .brand-text .sub {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav .nav-links {
+    display: flex;
+    gap: 28px;
+  }
+
+  nav a.nav-link {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+    position: relative;
+    padding: 4px 0;
+  }
+
+  nav a.nav-link:hover { color: var(--teal); }
+
+  .lang-toggle {
+    display: flex;
+    border: 1px solid var(--navy);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .lang-toggle button {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: var(--navy);
+    font-family: Arial, sans-serif;
+  }
+
+  .lang-toggle button.active {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+  }
+  .menu-toggle span { width: 22px; height: 2px; background: var(--navy); display: block; }
+
+  /* ===== Hero ===== */
+  .hero {
+    position: relative;
+    padding: 96px 32px 110px;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 80% -10%, rgba(201,162,75,0.16), transparent 55%),
+      linear-gradient(180deg, #0D2B4E 0%, #133158 55%, #15365f 100%);
+    color: var(--white);
+  }
+
+  .hero-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    color: var(--white);
+    font-size: 46px;
+    line-height: 1.18;
+    max-width: 620px;
+    margin-bottom: 22px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .hero p.lead {
+    font-size: 17px;
+    color: rgba(255,255,255,0.78);
+    max-width: 520px;
+    margin-bottom: 34px;
+  }
+
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 26px;
+    border-radius: 3px;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+  }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .btn-gold:hover { background: #d8b35e; }
+
+  .btn-outline {
+    border-color: rgba(255,255,255,0.4);
+    color: var(--white);
+  }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.06); }
+
+  .btn-outline-dark {
+    border-color: var(--navy);
+    color: var(--navy);
+  }
+  .btn-outline-dark:hover { background: var(--navy); color: var(--white); }
+
+  /* Seal / signature element */
+  .seal-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .seal {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  /* ===== Stat strip ===== */
+  .stat-strip {
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .stat-strip .wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 32px;
+  }
+  .stat {
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.12);
+    padding: 4px 12px;
+  }
+  .stat:first-child { border-left: none; }
+  .stat .num {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: var(--gold);
+  }
+  .stat .label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    margin-top: 4px;
+  }
+
+  /* ===== Section generic ===== */
+  section { padding: 96px 32px; }
+  .section-head {
+    max-width: 640px;
+    margin-bottom: 56px;
+  }
+  .section-head .eyebrow { color: var(--gold-deep); }
+  .section-head h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+  .section-head p {
+    color: var(--ink-soft);
+    font-size: 15.5px;
+  }
+
+  .alt-bg { background: var(--white); }
+
+  /* ===== About ===== */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .about-grid p {
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    font-size: 15.5px;
+  }
+  .pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .pillar {
+    display: flex;
+    gap: 16px;
+    padding: 22px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 2px;
+  }
+  .pillar .pillar-num {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: var(--gold-deep);
+    flex-shrink: 0;
+    width: 32px;
+  }
+  .pillar h4 { font-size: 16px; margin-bottom: 6px; }
+  .pillar p { font-size: 14px; color: var(--ink-soft); margin: 0; }
+
+  .affil-line {
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .affil-line strong { color: var(--navy); }
+
+  /* ===== Disciplines ===== */
+  .disc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .disc-card {
+    background: var(--white);
+    padding: 32px 28px;
+    transition: background 0.15s ease;
+  }
+  .disc-card:hover { background: var(--parchment); }
+  .disc-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 18px;
+  }
+  .disc-card h4 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .disc-card p {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  /* ===== Courses (curriculum ladder) ===== */
+  .tier-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    background: var(--white);
+  }
+  .tier {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    border-bottom: 1px solid var(--line);
+  }
+  .tier:last-child { border-bottom: none; }
+  .tier-mark {
+    background: var(--navy);
+    color: var(--gold);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 32px;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+  .tier-body { padding: 32px 36px; }
+  .tier-body h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .tier-body .tier-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .tier-body p.desc {
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    margin-bottom: 18px;
+    max-width: 640px;
+  }
+  .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .course-tag {
+    font-size: 12.5px;
+    padding: 6px 13px;
+    background: var(--parchment);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    color: var(--ink);
+  }
+
+  /* ===== Cases ===== */
+  .cases-wrap {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+    background: var(--white);
+  }
+  .cases-left {
+    background: var(--navy);
+    color: var(--white);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cases-left .eyebrow { color: var(--gold); }
+  .cases-left h2 {
+    color: var(--white);
+    font-size: 27px;
+    margin-bottom: 16px;
+  }
+  .cases-left p {
+    color: rgba(255,255,255,0.75);
+    font-size: 14.5px;
+    margin-bottom: 26px;
+  }
+  .cases-right { padding: 40px; }
+  .case-format {
+    display: flex;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .case-format:last-child { border-bottom: none; }
+  .case-format .step {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: var(--gold-deep);
+    width: 34px;
+    flex-shrink: 0;
+  }
+  .case-format h4 { font-size: 15.5px; margin-bottom: 4px; }
+  .case-format p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+
+  /* ===== Young Fellows ===== */
+  .yf-section {
+    background: linear-gradient(180deg, #0D2B4E 0%, #102d50 100%);
+    color: var(--white);
+  }
+  .yf-section .section-head h2 { color: var(--white); }
+  .yf-section .section-head p { color: rgba(255,255,255,0.72); }
+  .yf-section .eyebrow { color: var(--gold); }
+
+  .yf-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  .yf-year {
+    border: 1px solid rgba(255,255,255,0.16);
+    padding: 26px 20px;
+    border-radius: 2px;
+  }
+  .yf-year .yf-label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .yf-year h4 {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .yf-year p {
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .yf-cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 32px 36px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 2px;
+    flex-wrap: wrap;
+  }
+  .yf-cta-box h4 { color: var(--white); font-size: 18px; margin-bottom: 6px; }
+  .yf-cta-box p { color: rgba(255,255,255,0.65); font-size: 13.5px; margin: 0; }
+
+  /* ===== Faculty / Leadership strip ===== */
+  .lead-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .lead-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+  }
+  .lead-photo {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: var(--parchment-dark);
+    border: 2px solid var(--gold);
+    flex-shrink: 0;
+  }
+  .lead-card h4 { font-size: 16px; margin-bottom: 2px; }
+  .lead-card .role { font-size: 12.5px; color: var(--teal); font-weight: 700; margin-bottom: 10px; }
+  .lead-card p.bio { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+
+  /* ===== Contact ===== */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 64px;
+  }
+  .contact-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .contact-item h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gold-deep);
+    margin-bottom: 6px;
+  }
+  .contact-item p, .contact-item a { font-size: 15px; color: var(--ink); }
+
+  form#cmea-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field label {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 0.02em;
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    border: 1px solid var(--line);
+    background: var(--white);
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-radius: 2px;
+    color: var(--ink);
+  }
+  .form-field textarea { resize: vertical; min-height: 110px; }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+  }
+  #cmea-form button {
+    align-self: flex-start;
+    margin-top: 6px;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #cmea-form button:hover { background: var(--blue); }
+  .form-note { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+  .form-success {
+    display: none;
+    padding: 16px 18px;
+    background: #E7F4F3;
+    border: 1px solid var(--teal);
+    color: var(--navy);
+    font-size: 14px;
+    border-radius: 2px;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.6);
+    padding: 56px 32px 28px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .footer-brand { display: flex; gap: 12px; align-items: flex-start; }
+  .footer-brand .brand-text .full { color: var(--white); }
+  .footer-brand p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 14px;
+    max-width: 280px;
+  }
+  .footer-col h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .footer-col a, .footer-col p {
+    display: block;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 10px;
+  }
+  .footer-col a:hover { color: var(--white); }
+  .footer-bottom {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 980px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .seal-wrap { order: -1; }
+    .seal { max-width: 220px; }
+    .about-grid, .lead-strip, .contact-grid, .cases-wrap { grid-template-columns: 1fr; }
+    .disc-grid { grid-template-columns: repeat(2, 1fr); }
+    .yf-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .stat-strip .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
+  }
+
+  @media (max-width: 720px) {
+    .wrap, section { padding-left: 20px; padding-right: 20px; }
+    .header-inner { padding: 14px 20px; }
+    nav .nav-links { display: none; }
+    .menu-toggle { display: flex; }
+    .hero { padding: 56px 20px 70px; }
+    .hero h1 { font-size: 32px; }
+    .disc-grid { grid-template-columns: 1fr; }
+    .yf-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    .tier { grid-template-columns: 1fr; }
+    .tier-mark { padding: 16px 0 0 24px; flex-direction: row; justify-content: flex-start; }
+    .form-row { grid-template-columns: 1fr; }
+    .yf-cta-box { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" fill="none" stroke="#0D2B4E" stroke-width="1.5"/>
+        <circle cx="30" cy="30" r="23" fill="none" stroke="#C9A24B" stroke-width="1"/>
+        <path d="M30 16 L33 24 L30 30 L27 24 Z" fill="#0E7C7B"/>
+        <path d="M18 30 L22 27 L30 30 L22 33 Z" fill="#0D2B4E"/>
+        <path d="M42 30 L38 27 L30 30 L38 33 Z" fill="#0D2B4E"/>
+        <path d="M30 30 L27 38 L30 44 L33 38 Z" fill="#0D2B4E"/>
+        <circle cx="30" cy="30" r="3" fill="#C9A24B"/>
+      </svg>
+      <span class="brand-text">
+        <span class="full" data-en>CMEA</span>
+        <span class="full" data-ka>CMEA</span>
+        <span class="sub" data-en>CardioMetabolic Excellence Academy</span>
+        <span class="sub" data-ka>საქართველოს კარდიომეტაბოლური სპეციალიზაციის აკადემია</span>
+      </span>
+    </a>
+    <nav>
+      <div class="nav-links">
+        <a class="nav-link" href="#congress" data-en>Congress 2026</a>
+        <a class="nav-link" href="#congress" data-ka>კონგრესი 2026</a>
+        <a class="nav-link" href="#about" data-en>About</a>
+        <a class="nav-link" href="#about" data-ka>აკადემიის შესახებ</a>
+        <a class="nav-link" href="#courses" data-en>Courses</a>
+        <a class="nav-link" href="#courses" data-ka>კურსები</a>
+        <a class="nav-link" href="#cases" data-en>Case Discussions</a>
+        <a class="nav-link" href="#cases" data-ka>ქეისები</a>
+        <a class="nav-link" href="#fellows" data-en>Young Fellows</a>
+        <a class="nav-link" href="#fellows" data-ka>Young Fellows</a>
+        <a class="nav-link" href="roadmap.html" data-en>Course Catalogue</a>
+        <a class="nav-link" href="roadmap.html" data-ka>კურსების კატალოგი</a>
+        <a class="nav-link" href="#contact" data-en>Contact</a>
+        <a class="nav-link" href="#contact" data-ka>კონტაქტი</a>
+      </div>
+      <div class="lang-toggle">
+        <button type="button" onclick="setLang('en')" id="btn-en">EN</button>
+        <button type="button" onclick="setLang('ka')" id="btn-ka">ქარ</button>
+      </div>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">
+        <span data-en>A Programme of the Georgian Atherosclerosis Association</span>
+        <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის პროგრამა</span>
+      </div>
+      <h1>
+        <span data-en>Training the region's next generation of <em>cardiometabolic leaders</em></span>
+        <span data-ka><em>კარდიომეტაბოლური</em> დარგის ლიდერების მომზადება — უწყვეტი განათლება უახლესი სტანდარტების შესაბამისად</span>
+      </h1>
+      <p class="lead">
+        <span data-en>CMEA brings together promising young physicians across six disciplines for accredited courses, case-based learning, and a multi-year fellowship — establishing a new standard of care in Georgia and the Caucasus.</span>
+        <span data-ka>CMEA აერთიანებს პერსპექტიულ ახალგაზრდა ექიმებს ექვსი სპეციალობიდან აკრედიტებული კურსების, ქეისებზე დაფუძნებული სწავლებისა და მრავალწლიანი ფელოუშიპის გზით — მკურნალობის ახალი სტანდარტის დასამკვიდრებლად საქართველოსა და კავკასიაში.</span>
+      </p>
+      <div class="hero-ctas">
+        <a href="#fellows" class="btn btn-gold">
+          <span data-en>Apply to Young Fellows</span>
+          <span data-ka>Young Fellows-ში ჩარიცხვა</span>
+        </a>
+        <a href="#courses" class="btn btn-outline">
+          <span data-en>View Courses</span>
+          <span data-ka>კურსების ნახვა</span>
+        </a>
+      </div>
+    </div>
+    <div class="seal-wrap">
+      <svg class="seal" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="180" cy="180" r="172" fill="none" stroke="#C9A24B" stroke-width="1.5"/>
+        <circle cx="180" cy="180" r="158" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+        <circle cx="180" cy="180" r="120" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <!-- six discipline marks around the seal -->
+        <g fill="#C9A24B">
+          <circle cx="180" cy="52" r="4"/>
+          <circle cx="291" cy="116" r="4"/>
+          <circle cx="291" cy="244" r="4"/>
+          <circle cx="180" cy="308" r="4"/>
+          <circle cx="69" cy="244" r="4"/>
+          <circle cx="69" cy="116" r="4"/>
+        </g>
+        <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+          <line x1="180" y1="52" x2="180" y2="120"/>
+          <line x1="291" y1="116" x2="230" y2="150"/>
+          <line x1="291" y1="244" x2="230" y2="210"/>
+          <line x1="180" y1="308" x2="180" y2="240"/>
+          <line x1="69" y1="244" x2="130" y2="210"/>
+          <line x1="69" y1="116" x2="130" y2="150"/>
+        </g>
+        <!-- center cardiac/pulse mark -->
+        <circle cx="180" cy="180" r="58" fill="none" stroke="#0E7C7B" stroke-width="1.5"/>
+        <path d="M130 180 L155 180 L165 160 L178 200 L190 165 L200 180 L230 180" fill="none" stroke="#0E7C7B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="180" y="135" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Georgia, serif" font-size="9" letter-spacing="3">CARDIOMETABOLIC</text>
+        <text x="180" y="237" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Georgia, serif" font-size="9" letter-spacing="3">EXCELLENCE · GEORGIA</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT STRIP ============ -->
+<div class="stat-strip">
+  <div class="wrap">
+    <div class="stat">
+      <div class="num">6</div>
+      <div class="label" data-en>Disciplines</div>
+      <div class="label" data-ka>დარგი</div>
+    </div>
+    <div class="stat">
+      <div class="num">3</div>
+      <div class="label" data-en>Course Tiers</div>
+      <div class="label" data-ka>კურსის საფეხური</div>
+    </div>
+    <div class="stat">
+      <div class="num">2</div>
+      <div class="label" data-en>Years per Cohort</div>
+      <div class="label" data-ka>წელი თითო ნაკადზე</div>
+    </div>
+    <div class="stat">
+      <div class="num">EN/KA</div>
+      <div class="label" data-en>Bilingual Curriculum</div>
+      <div class="label" data-ka>ორენოვანი კურიკულუმი</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONGRESS 2026 ============ -->
+<section id="congress" style="background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); padding: 0;">
+  <div class="wrap" style="padding: 64px 32px;">
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="color: var(--gold);">
+          <span data-en>2026 Congress</span>
+          <span data-ka>2026 წლის კონგრესი</span>
+        </div>
+        <h2 style="color: var(--white); font-size: 30px; margin-bottom: 14px;">
+          <span data-en>Georgian Atherosclerosis Association Congress 2026</span>
+          <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის კონგრესი 2026</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.78); font-size: 15px; margin-bottom: 22px; max-width: 480px;">
+          <span data-en>Join physicians from across Georgia — top lectures, case discussions, panel debates, and workshops.</span>
+          <span data-ka>შემოუერთდით საქართველოს ექიმებს — საუკეთესო მოხსენებები, ქეისების განხილვა, დისკუსიები, ვორკშოფები.</span>
+        </p>
+        <div style="display: flex; gap: 28px; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 4px;" data-en>Date</div>
+            <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 4px;" data-ka>თარიღი</div>
+            <div style="color: var(--white); font-size: 16px; font-family: Georgia, serif;">
+              <span data-en>10 October 2026</span>
+              <span data-ka>2026 წლის 10 ოქტომბერი</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 4px;" data-en>Location</div>
+            <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 4px;" data-ka>ადგილი</div>
+            <div style="color: var(--white); font-size: 16px; font-family: Georgia, serif;">
+              <span data-en>Tbilisi, Georgia</span>
+              <span data-ka>თბილისი, საქართველო</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.16); border-radius: 3px; padding: 32px;">
+        <h4 style="color: var(--white); font-size: 16px; margin-bottom: 18px;">
+          <span data-en>Register Your Interest</span>
+          <span data-ka>დარეგისტრირდით</span>
+        </h4>
+        <form id="congress-form" action="https://formspree.io/f/xvznyglo" method="POST">
+          <input type="hidden" name="_subject" value="Georgian Atherosclerosis Association Congress 2026 — Registration">
+          <div class="form-field" style="margin-bottom: 14px;">
+            <label for="cg-name" style="color: rgba(255,255,255,0.85);" data-en>Full Name</label>
+            <label for="cg-name" style="color: rgba(255,255,255,0.85);" data-ka>სახელი და გვარი</label>
+            <input type="text" id="cg-name" name="name" required>
+          </div>
+          <div class="form-field" style="margin-bottom: 14px;">
+            <label for="cg-email" style="color: rgba(255,255,255,0.85);" data-en>Email</label>
+            <label for="cg-email" style="color: rgba(255,255,255,0.85);" data-ka>ელ. ფოსტა</label>
+            <input type="email" id="cg-email" name="email" required>
+          </div>
+          <div class="form-field" style="margin-bottom: 18px;">
+            <label for="cg-specialty" style="color: rgba(255,255,255,0.85);" data-en>Specialty</label>
+            <label for="cg-specialty" style="color: rgba(255,255,255,0.85);" data-ka>სპეციალობა</label>
+            <select id="cg-specialty" name="specialty">
+              <option data-en value="Cardiology">Cardiology</option>
+              <option data-ka value="Cardiology">კარდიოლოგია</option>
+              <option data-en value="Endocrinology">Endocrinology</option>
+              <option data-ka value="Endocrinology">ენდოკრინოლოგია</option>
+              <option data-en value="Lipidology">Lipidology</option>
+              <option data-ka value="Lipidology">ლიპიდოლოგია</option>
+              <option data-en value="Neurology">Neurology</option>
+              <option data-ka value="Neurology">ნევროლოგია</option>
+              <option data-en value="Angiology">Angiology</option>
+              <option data-ka value="Angiology">ანგიოლოგია</option>
+              <option data-en value="Vascular Radiology">Vascular Radiology</option>
+              <option data-ka value="Vascular Radiology">სისხლძარღვთა რადიოლოგია</option>
+              <option data-en value="Other">Other</option>
+              <option data-ka value="Other">სხვა</option>
+            </select>
+          </div>
+          <button type="submit" style="width: 100%; background: var(--gold); color: var(--navy); border: none; padding: 13px 26px; border-radius: 3px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.03em; cursor: pointer;">
+            <span data-en>Register for Congress 2026</span>
+            <span data-ka>დარეგისტრირდით კონგრესზე</span>
+          </button>
+          <div id="congress-form-success" style="display:none; margin-top: 14px; padding: 12px 14px; background: rgba(14,124,123,0.2); border: 1px solid var(--teal); border-radius: 2px; color: var(--white); font-size: 13px;">
+            <span data-en>Thank you — we'll be in touch with full congress details.</span>
+            <span data-ka>გმადლობთ — მალე დაგიკავშირდებით კონგრესის სრული დეტალებით.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>About the Academy</span>
+        <span data-ka>აკადემიის შესახებ</span>
+      </div>
+      <h2>
+        <span data-en>A formal track for cardiometabolic specialization in Georgia</span>
+        <span data-ka>კარდიომეტაბოლური სპეციალიზაციის ფორმალური გზა საქართველოში</span>
+      </h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p data-en>CardioMetabolic Excellence Academy Georgia (CMEA) was founded to close a gap: talented young physicians across cardiology, endocrinology, lipidology, neurology, angiology, and vascular radiology had no structured, accredited pathway to deepen their expertise in atherosclerotic and cardiometabolic disease.</p>
+        <p data-en>The Academy combines online learning, accredited in-person courses, and structured case discussion with a flagship multi-year fellowship — giving participants both the knowledge and the practical, case-tested judgment to lead in their field.</p>
+        <p data-en>CMEA operates under the Georgian Atherosclerosis Association and works in coordination with the Georgian Lipid Clinic Network (Georgian-LCN) and the European Atherosclerosis Society (EAS), aligning local training with European standards of care.</p>
+
+        <p data-ka>CardioMetabolic Excellence Academy Georgia (CMEA) დაარსდა ერთი მკაფიო მიზნით — შეივსოს ხარვეზი: ნიჭიერ ახალგაზრდა ექიმებს კარდიოლოგიის, ენდოკრინოლოგიის, ლიპიდოლოგიის, ნევროლოგიის, ანგიოლოგიისა და სისხლძარღვთა რადიოლოგიის სფეროებში არ ჰქონდათ სტრუქტურირებული, აკრედიტებული გზა ათეროსკლეროზული და კარდიომეტაბოლური დაავადებების სიღრმისეულად შესასწავლად.</p>
+        <p data-ka>აკადემია აერთიანებს ონლაინ სწავლებას, აკრედიტებულ კონტაქტურ კურსებსა და სტრუქტურირებულ ქეისების განხილვას ფლაგმანურ მრავალწლიან ფელოუშიპთან ერთად — რაც მონაწილეებს აძლევს როგორც ცოდნას, ისე პრაქტიკულ, ქეისებზე გამყარებულ განსჯას, რომ გახდნენ თავიანთი დარგის ლიდერები.</p>
+        <p data-ka>CMEA მოქმედებს საქართველოს ათეროსკლეროზის ასოციაციის ფარგლებში და კოორდინირებულად თანამშრომლობს საქართველოს ლიპიდური კლინიკების ქსელთან (Georgian-LCN) და ევროპის ათეროსკლეროზის საზოგადოებასთან (EAS), რათა ადგილობრივი მომზადება შეესაბამებოდეს ევროპულ სტანდარტებს.</p>
+
+        <div class="affil-line">
+          <span data-en><strong>Affiliated with:</strong> Georgian Atherosclerosis Association · Georgian Lipid Clinic Network (Georgian-LCN) · European Atherosclerosis Society (EAS)</span>
+          <span data-ka><strong>აფილირებული:</strong> საქართველოს ათეროსკლეროზის ასოციაცია · Georgian-LCN · ევროპის ათეროსკლეროზის საზოგადოება (EAS)</span>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <div>
+            <h4><span data-en>Set the standard</span><span data-ka>სტანდარტის დამკვიდრება</span></h4>
+            <p><span data-en>Establish a new, evidence-based standard of cardiometabolic care across Georgia, anchored in current ESC/EAS guidelines.</span><span data-ka>მკურნალობის ახალი, მტკიცებულებებზე დაფუძნებული სტანდარტის დამკვიდრება საქართველოში, მიმდინარე ESC/EAS გაიდლაინების საფუძველზე.</span></p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <div>
+            <h4><span data-en>Build across disciplines</span><span data-ka>დარგთაშორისი მიდგომა</span></h4>
+            <p><span data-en>Bring cardiology, endocrinology, lipidology, neurology, angiology, and vascular radiology into one shared curriculum.</span><span data-ka>კარდიოლოგია, ენდოკრინოლოგია, ლიპიდოლოგია, ნევროლოგია, ანგიოლოგია და სისხლძარღვთა რადიოლოგია — ერთიან კურიკულუმში.</span></p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <div>
+            <h4><span data-en>Learn from real cases</span><span data-ka>სწავლება რეალურ ქეისებზე</span></h4>
+            <p><span data-en>Translate knowledge into practice through structured, regular case discussion — not lectures alone.</span><span data-ka>ცოდნის პრაქტიკაში გადატანა სტრუქტურირებული, რეგულარული ქეისების განხილვის გზით — არა მხოლოდ ლექციებით.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINES ============ -->
+<section id="disciplines">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>Who This Is For</span>
+        <span data-ka>ვისთვისაა განკუთვნილი</span>
+      </div>
+      <h2>
+        <span data-en>Six disciplines, one shared standard of care</span>
+        <span data-ka>ექვსი დარგი, ერთი საერთო სტანდარტი</span>
+      </h2>
+      <p>
+        <span data-en>Cardiometabolic disease crosses specialty lines. CMEA is built for physicians in the fields where prevention, diagnosis, and management of atherosclerotic disease matter most.</span>
+        <span data-ka>კარდიომეტაბოლური დაავადებები სცდება ერთი სპეციალობის ფარგლებს. CMEA შექმნილია იმ ექიმებისთვის, ვისთვისაც ათეროსკლეროზული დაავადებების პრევენცია, დიაგნოსტიკა და მართვა ყველაზე მნიშვნელოვანია.</span>
+      </p>
+    </div>
+
+    <div class="disc-grid">
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><path d="M11 22h6l3-7 4 14 3-7h6" stroke="#0E7C7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4 data-en>Cardiology</h4><h4 data-ka>კარდიოლოგია</h4>
+        <p data-en>Risk stratification, prevention, and management of coronary and structural disease.</p>
+        <p data-ka>რისკის სტრატიფიკაცია, კორონარული და სტრუქტურული დაავადებების პრევენცია და მართვა.</p>
+      </div>
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><circle cx="22" cy="22" r="9" stroke="#0E7C7B" stroke-width="2"/><circle cx="22" cy="22" r="3" fill="#C9A24B"/></svg>
+        <h4 data-en>Endocrinology</h4><h4 data-ka>ენდოკრინოლოგია</h4>
+        <p data-en>Diabetes, metabolic syndrome, and hormonal contributors to cardiovascular risk.</p>
+        <p data-ka>დიაბეტი, მეტაბოლური სინდრომი და ჰორმონული ფაქტორები კარდიოვასკულურ რისკში.</p>
+      </div>
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><path d="M14 28c2-8 5-12 8-12s6 4 8 12" stroke="#0E7C7B" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="16" r="2.5" fill="#C9A24B"/></svg>
+        <h4 data-en>Lipidology</h4><h4 data-ka>ლიპიდოლოგია</h4>
+        <p data-en>Dyslipidaemia management, FH, Lp(a), and lipid clinic standards of practice.</p>
+        <p data-ka>დისლიპიდემიის მართვა, FH, Lp(a) და ლიპიდური კლინიკის სტანდარტები.</p>
+      </div>
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><path d="M22 11v6M22 27v6M11 22h6M27 22h6" stroke="#0E7C7B" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="22" r="4" stroke="#C9A24B" stroke-width="1.5"/></svg>
+        <h4 data-en>Neurology</h4><h4 data-ka>ნევროლოგია</h4>
+        <p data-en>Stroke prevention and the cerebrovascular dimensions of atherosclerotic disease.</p>
+        <p data-ka>ინსულტის პრევენცია და ათეროსკლეროზის ცერებროვასკულური ასპექტები.</p>
+      </div>
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><path d="M14 14c4 0 4 16 8 16s4-16 8-16" stroke="#0E7C7B" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <h4 data-en>Angiology</h4><h4 data-ka>ანგიოლოგია</h4>
+        <p data-en>Peripheral artery disease, vascular medicine, and systemic atherosclerotic burden.</p>
+        <p data-ka>პერიფერიული არტერიების დაავადება და სისტემური ათეროსკლეროზული დატვირთვა.</p>
+      </div>
+      <div class="disc-card">
+        <svg class="disc-icon" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#0D2B4E" stroke-width="1.2"/><rect x="14" y="14" width="16" height="16" stroke="#0E7C7B" stroke-width="2" rx="2"/><circle cx="22" cy="22" r="3" fill="#C9A24B"/></svg>
+        <h4 data-en>Vascular Radiology</h4><h4 data-ka>სისხლძარღვთა რადიოლოგია</h4>
+        <p data-en>Imaging-based diagnosis and quantification of atherosclerotic plaque burden.</p>
+        <p data-ka>ათეროსკლეროზული ფოლაქის ვიზუალური დიაგნოსტიკა და შეფასება.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COURSES ============ -->
+<section id="courses" class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>Curriculum</span>
+        <span data-ka>კურიკულუმი</span>
+      </div>
+      <h2>
+        <span data-en>Three tiers, one continuous pathway</span>
+        <span data-ka>სამი საფეხური, ერთიანი გზა</span>
+      </h2>
+      <p>
+        <span data-en>Courses are structured to build progressively — from flexible online foundations to accredited, in-person advanced training.</span>
+        <span data-ka>კურსები აგებულია თანმიმდევრულად — მოქნილი ონლაინ საფუძვლებიდან აკრედიტებულ, კონტაქტურ მოწინავე მომზადებამდე.</span>
+      </p>
+    </div>
+
+    <div class="tier-list">
+      <div class="tier">
+        <div class="tier-mark">TIER I</div>
+        <div class="tier-body">
+          <span class="tier-tag" data-en>Online · Self-paced</span>
+          <span class="tier-tag" data-ka>ონლაინ · საკუთარი ტემპით</span>
+          <h3 data-en>Foundational Courses</h3>
+          <h3 data-ka>საბაზისო კურსები</h3>
+          <p class="desc" data-en>Open to physicians across all six disciplines. Covers core guidelines, risk assessment, and the fundamentals of cardiometabolic disease — available in English and Georgian, on demand.</p>
+          <p class="desc" data-ka>ღია ექვსივე დარგის ექიმისთვის. მოიცავს ძირითად გაიდლაინებს, რისკის შეფასებას და კარდიომეტაბოლური დაავადებების საფუძვლებს — ხელმისაწვდომია ინგლისურად და ქართულად, ნებისმიერ დროს.</p>
+          <div class="course-tags">
+            <span class="course-tag" data-en>ESC/EAS Guidelines Essentials</span>
+            <span class="course-tag" data-ka>ESC/EAS გაიდლაინების საფუძვლები</span>
+            <span class="course-tag" data-en>CV Risk Assessment</span>
+            <span class="course-tag" data-ka>გულსისხლძარღვთა რისკის შეფასება</span>
+            <span class="course-tag" data-en>Intro to Lipid Management</span>
+            <span class="course-tag" data-ka>ლიპიდების მართვის შესავალი</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-mark">TIER II</div>
+        <div class="tier-body">
+          <span class="tier-tag" data-en>Accredited · CME Credits</span>
+          <span class="tier-tag" data-ka>აკრედიტებული · CME ქულები</span>
+          <h3 data-en>Specialty Courses</h3>
+          <h3 data-ka>სპეციალობის კურსები</h3>
+          <p class="desc" data-en>In-person and hybrid courses tailored to each discipline, accredited for continuing medical education credit and taught by Georgian and EAS-affiliated faculty.</p>
+          <p class="desc" data-ka>კონტაქტური და ჰიბრიდული კურსები თითოეული დარგისთვის, აკრედიტებული უწყვეტი სამედიცინო განათლების ქულებით, ქართველი და EAS-აფილირებული პედაგოგების მიერ.</p>
+          <div class="course-tags">
+            <span class="course-tag" data-en>Lipid Clinic Practice Course</span>
+            <span class="course-tag" data-ka>ლიპიდური კლინიკის პრაქტიკის კურსი</span>
+            <span class="course-tag" data-en>Diabetes & CV Risk</span>
+            <span class="course-tag" data-ka>დიაბეტი და გულსისხლძარღვთა რისკი</span>
+            <span class="course-tag" data-en>Vascular Imaging Workshop</span>
+            <span class="course-tag" data-ka>სისხლძარღვთა ვიზუალიზაციის ვორქშოპი</span>
+            <span class="course-tag" data-en>Stroke Prevention Track</span>
+            <span class="course-tag" data-ka>ინსულტის პრევენციის კურსი</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-mark">TIER III</div>
+        <div class="tier-body">
+          <span class="tier-tag" data-en>By Application · Limited Cohort</span>
+          <span class="tier-tag" data-ka>კონკურსით · შეზღუდული ნაკადი</span>
+          <h3 data-en>Advanced & Leadership Tracks</h3>
+          <h3 data-ka>მოწინავე და სალიდერო კურსები</h3>
+          <p class="desc" data-en>Symposium-based deep dives, research mentorship, and the Young Fellows Programme — for physicians ready to lead departments, registries, and national initiatives.</p>
+          <p class="desc" data-ka>სიმპოზიუმებზე დაფუძნებული სიღრმისეული კურსები, სამეცნიერო მენტორობა და Young Fellows პროგრამა — ექიმებისთვის, რომლებიც მზად არიან ჩაუდგნენ სათავეში განყოფილებებს, რეგისტრებსა და ეროვნულ ინიციატივებს.</p>
+          <div class="course-tags">
+            <span class="course-tag" data-en>Annual CMEA Symposium</span>
+            <span class="course-tag" data-ka>CMEA-ს წლიური სიმპოზიუმი</span>
+            <span class="course-tag" data-en>Research Mentorship</span>
+            <span class="course-tag" data-ka>სამეცნიერო მენტორობა</span>
+            <span class="course-tag" data-en>Young Fellows Programme</span>
+            <span class="course-tag" data-ka>Young Fellows პროგრამა</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE DISCUSSIONS ============ -->
+<section id="cases">
+  <div class="wrap">
+    <div class="cases-wrap">
+      <div class="cases-left">
+        <div class="eyebrow">
+          <span data-en>Practice-Based Learning</span>
+          <span data-ka>პრაქტიკაზე დაფუძნებული სწავლება</span>
+        </div>
+        <h2>
+          <span data-en>Where knowledge becomes practice</span>
+          <span data-ka>სადაც ცოდნა პრაქტიკად იქცევა</span>
+        </h2>
+        <p data-en>Every CMEA track includes regular, structured case discussion — real, de-identified patient cases reviewed by faculty and fellows together, so physicians leave able to apply what they've learned, not just describe it.</p>
+        <p data-ka>CMEA-ს ყველა საფეხური მოიცავს რეგულარულ, სტრუქტურირებულ ქეისების განხილვას — რეალურ, ანონიმიზებულ პაციენტთა ქეისებს, რომლებსაც პედაგოგები და ფელოუები ერთად განიხილავენ, რათა ექიმებმა შეძლონ ნასწავლის რეალურად გამოყენება, და არა მხოლოდ აღწერა.</p>
+        <a href="#contact" class="btn btn-gold" style="margin-top: 10px;" onclick="prefillInterest('Case Discussions')">
+          <span data-en>Join a Case Discussion</span>
+          <span data-ka>ქეისების განხილვაში ჩართვა</span>
+        </a>
+      </div>
+      <div class="cases-right">
+        <div class="case-format">
+          <div class="step">01</div>
+          <div>
+            <h4 data-en>Monthly virtual case rounds</h4>
+            <h4 data-ka>ყოველთვიური ვირტუალური ქეის-რაუნდები</h4>
+            <p data-en>Cross-specialty cases presented and discussed live, open to all enrolled physicians.</p>
+            <p data-ka>დარგთაშორისი ქეისები წარმოდგენილი და განხილული პირდაპირ ეთერში, ღია ყველა ჩარიცხული ექიმისთვის.</p>
+          </div>
+        </div>
+        <div class="case-format">
+          <div class="step">02</div>
+          <div>
+            <h4 data-en>In-person symposium workshops</h4>
+            <h4 data-ka>კონტაქტური ვორქშოპები სიმპოზიუმზე</h4>
+            <p data-en>Small-group, hands-on case work during the annual symposium and specialty courses.</p>
+            <p data-ka>მცირე ჯგუფური, პრაქტიკული ქეის-მუშაობა წლიური სიმპოზიუმისა და სპეციალობის კურსების ფარგლებში.</p>
+          </div>
+        </div>
+        <div class="case-format">
+          <div class="step">03</div>
+          <div>
+            <h4 data-en>Fellow-led case archive</h4>
+            <h4 data-ka>ფელოუების მიერ შექმნილი ქეის-არქივი</h4>
+            <p data-en>Young Fellows build and present their own case portfolio as part of the programme.</p>
+            <p data-ka>Young Fellows-ის მონაწილეები ქმნიან და წარადგენენ საკუთარ ქეის-პორტფოლიოს პროგრამის ფარგლებში.</p>
+          </div>
+        </div>
+        <div class="case-format">
+          <div class="step">04</div>
+          <div>
+            <h4 data-en>Guideline-anchored discussion</h4>
+            <h4 data-ka>გაიდლაინებზე დაფუძნებული განხილვა</h4>
+            <p data-en>Every case is tied back to current ESC/EAS guidance, so learning translates directly to bedside decisions.</p>
+            <p data-ka>ყოველი ქეისი დაკავშირებულია მიმდინარე ESC/EAS გაიდლაინებთან, რათა სწავლება პირდაპირ აისახოს კლინიკურ გადაწყვეტილებებში.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YOUNG FELLOWS ============ -->
+<section id="fellows" class="yf-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>Flagship Programme</span>
+        <span data-ka>ფლაგმანური პროგრამა</span>
+      </div>
+      <h2>
+        <span data-en>CMEA Young Fellows</span>
+        <span data-ka>CMEA Young Fellows</span>
+      </h2>
+      <p>
+        <span data-en>A two-year, mentored track for outstanding early-career physicians — combining advanced coursework, research mentorship, and a leadership role within the Academy and the Georgian Atherosclerosis Association.</span>
+        <span data-ka>ორწლიანი, მენტორირებული პროგრამა გამორჩეული ახალგაზრდა ექიმებისთვის — მოწინავე კურსების, სამეცნიერო მენტორობისა და სალიდერო როლის ერთობლიობა აკადემიასა და საქართველოს ათეროსკლეროზის ასოციაციაში.</span>
+      </p>
+    </div>
+
+    <div class="yf-grid">
+      <div class="yf-year">
+        <div class="yf-label" data-en>Year 1 · Term 1</div>
+        <div class="yf-label" data-ka>1 წელი · 1 სემესტრი</div>
+        <h4 data-en>Foundation</h4><h4 data-ka>საფუძველი</h4>
+        <p data-en>Core curriculum across all six disciplines, paired with a senior mentor.</p>
+        <p data-ka>ძირითადი კურიკულუმი ექვსივე დარგში, მენტორთან ერთად.</p>
+      </div>
+      <div class="yf-year">
+        <div class="yf-label" data-en>Year 1 · Term 2</div>
+        <div class="yf-label" data-ka>1 წელი · 2 სემესტრი</div>
+        <h4 data-en>Clinical Immersion</h4><h4 data-ka>კლინიკური ჩართულობა</h4>
+        <p data-en>Case-based rotations and structured case discussion leadership.</p>
+        <p data-ka>ქეისებზე დაფუძნებული როტაციები და ქეის-განხილვების წარმართვა.</p>
+      </div>
+      <div class="yf-year">
+        <div class="yf-label" data-en>Year 2 · Term 1</div>
+        <div class="yf-label" data-ka>2 წელი · 1 სემესტრი</div>
+        <h4 data-en>Research Project</h4><h4 data-ka>კვლევითი პროექტი</h4>
+        <p data-en>An independent or co-led research project under faculty supervision.</p>
+        <p data-ka>დამოუკიდებელი ან თანამშრომლური კვლევითი პროექტი პედაგოგების ხელმძღვანელობით.</p>
+      </div>
+      <div class="yf-year">
+        <div class="yf-label" data-en>Year 2 · Term 2</div>
+        <div class="yf-label" data-ka>2 წელი · 2 სემესტრი</div>
+        <h4 data-en>Presentation & Graduation</h4><h4 data-ka>პრეზენტაცია და დასრულება</h4>
+        <p data-en>Findings presented at the annual CMEA Symposium; fellows graduate into faculty roles.</p>
+        <p data-ka>შედეგების წარდგენა წლიურ CMEA სიმპოზიუმზე; ფელოუები გრძელდებიან პედაგოგის როლში.</p>
+      </div>
+    </div>
+
+    <div class="yf-cta-box">
+      <div>
+        <h4 data-en>Applications for the next Young Fellows cohort</h4>
+        <h4 data-ka>განაცხადები შემდეგი Young Fellows ნაკადისთვის</h4>
+        <p data-en>Open to physicians under 40 in cardiology, endocrinology, lipidology, neurology, angiology, or vascular radiology.</p>
+        <p data-ka>ღია 40 წლამდე ექიმებისთვის კარდიოლოგიის, ენდოკრინოლოგიის, ლიპიდოლოგიის, ნევროლოგიის, ანგიოლოგიის ან სისხლძარღვთა რადიოლოგიის სფეროებიდან.</p>
+      </div>
+      <a href="#contact" class="btn btn-gold" onclick="prefillInterest('Young Fellows Programme')">
+        <span data-en>Request Application Info</span>
+        <span data-ka>განაცხადის ინფორმაციის მოთხოვნა</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP ============ -->
+<section class="alt-bg">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>Academic Leadership</span>
+        <span data-ka>აკადემიური ხელმძღვანელობა</span>
+      </div>
+      <h2>
+        <span data-en>Led by Georgia's cardiometabolic community</span>
+        <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის ხელმძღვანელობით</span>
+      </h2>
+    </div>
+    <div class="lead-strip">
+      <div class="lead-card">
+        <div class="lead-photo" style="background-image: url('data:image/jpeg;base64,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'); background-size: cover; background-position: center;"></div>
+        <div>
+          <h4>Prof. Tea Gamezardashvili, MD, PhD, MHA, FACC</h4>
+          <div class="role">
+            <span data-en>Academic Director, CMEA</span>
+            <span data-ka>CMEA-ს აკადემიური დირექტორი</span>
+          </div>
+          <p class="bio">
+            <span data-en>President, Georgian Atherosclerosis Association · National Coordinator, Georgian-LCN · Clinical Manager, REMEDICAL Hospital</span>
+            <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი · Georgian-LCN-ის ეროვნული კოორდინატორი · REMEDICAL-ის კლინიკური მენეჯერი</span>
+          </p>
+        </div>
+      </div>
+      <div class="lead-card">
+        <div class="lead-photo"></div>
+        <div>
+          <h4 data-en>Specialty Faculty Council</h4>
+          <h4 data-ka>სპეციალობების პედაგოგთა საბჭო</h4>
+          <div class="role">
+            <span data-en>Six Discipline Leads</span>
+            <span data-ka>ექვსი დარგობრივი ხელმძღვანელი</span>
+          </div>
+          <p class="bio">
+            <span data-en>Senior physicians representing cardiology, endocrinology, lipidology, neurology, angiology, and vascular radiology shape and teach the curriculum.</span>
+            <span data-ka>წამყვანი ექიმები კარდიოლოგიის, ენდოკრინოლოგიის, ლიპიდოლოგიის, ნევროლოგიის, ანგიოლოგიისა და სისხლძარღვთა რადიოლოგიის სფეროებიდან აყალიბებენ და ასწავლიან კურიკულუმს.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span data-en>Get in Touch</span>
+        <span data-ka>დაგვიკავშირდით</span>
+      </div>
+      <h2>
+        <span data-en>Apply, partner, or ask a question</span>
+        <span data-ka>განაცხადი, თანამშრომლობა ან კითხვა</span>
+      </h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-block">
+        <div class="contact-item">
+          <h4 data-en>Email</h4>
+          <h4 data-ka>ელ. ფოსტა</h4>
+          <a href="mailto:infoathero@gmail.com">infoathero@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <h4 data-en>Affiliated With</h4>
+          <h4 data-ka>აფილირებული</h4>
+          <p data-en>Georgian Atherosclerosis Association</p>
+          <p data-ka>საქართველოს ათეროსკლეროზის ასოციაცია</p>
+        </div>
+        <div class="contact-item">
+          <h4 data-en>Based In</h4>
+          <h4 data-ka>მდებარეობა</h4>
+          <p>Tbilisi, Georgia</p>
+        </div>
+      </div>
+
+      <div>
+        <form id="cmea-form" action="https://formspree.io/f/xvznyglo" method="POST">
+          <input type="hidden" name="_subject" value="CMEA Academy — New Inquiry">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name" data-en>Full Name</label>
+              <label for="name" data-ka>სახელი და გვარი</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email" data-en>Email</label>
+              <label for="email" data-ka>ელ. ფოსტა</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="specialty" data-en>Specialty</label>
+              <label for="specialty" data-ka>სპეციალობა</label>
+              <select id="specialty" name="specialty">
+                <option data-en value="Cardiology">Cardiology</option>
+                <option data-ka value="Cardiology">კარდიოლოგია</option>
+                <option data-en value="Endocrinology">Endocrinology</option>
+                <option data-ka value="Endocrinology">ენდოკრინოლოგია</option>
+                <option data-en value="Lipidology">Lipidology</option>
+                <option data-ka value="Lipidology">ლიპიდოლოგია</option>
+                <option data-en value="Neurology">Neurology</option>
+                <option data-ka value="Neurology">ნევროლოგია</option>
+                <option data-en value="Angiology">Angiology</option>
+                <option data-ka value="Angiology">ანგიოლოგია</option>
+                <option data-en value="Vascular Radiology">Vascular Radiology</option>
+                <option data-ka value="Vascular Radiology">სისხლძარღვთა რადიოლოგია</option>
+                <option data-en value="Other">Other</option>
+                <option data-ka value="Other">სხვა</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="interest" data-en>I'm Interested In</label>
+              <label for="interest" data-ka>მაინტერესებს</label>
+              <select id="interest" name="interest">
+                <option data-en value="Foundational Courses">Foundational Courses</option>
+                <option data-ka value="Foundational Courses">საბაზისო კურსები</option>
+                <option data-en value="Specialty Courses">Specialty Courses</option>
+                <option data-ka value="Specialty Courses">სპეციალობის კურსები</option>
+                <option data-en value="Young Fellows Programme">Young Fellows Programme</option>
+                <option data-ka value="Young Fellows Programme">Young Fellows პროგრამა</option>
+                <option data-en value="Case Discussions">Case Discussions</option>
+                <option data-ka value="Case Discussions">ქეისების განხილვა</option>
+                <option data-en value="Partnership / Sponsorship">Partnership / Sponsorship</option>
+                <option data-ka value="Partnership / Sponsorship">თანამშრომლობა / მხარდაჭერა</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message" data-en>Message</label>
+            <label for="message" data-ka>შეტყობინება</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">
+            <span data-en>Send Inquiry</span>
+            <span data-ka>გაგზავნა</span>
+          </button>
+          <div class="form-note" data-en>We typically respond within 3–5 business days.</div>
+          <div class="form-note" data-ka>ჩვეულებრივ ვპასუხობთ 3–5 სამუშაო დღეში.</div>
+          <div class="form-success" id="form-success">
+            <span data-en>Thank you — your message has been sent.</span>
+            <span data-ka>გმადლობთ — თქვენი შეტყობინება გაგზავნილია.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="#C9A24B" stroke-width="1.5"/>
+          <circle cx="30" cy="30" r="23" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <path d="M30 16 L33 24 L30 30 L27 24 Z" fill="#0E7C7B"/>
+          <path d="M18 30 L22 27 L30 30 L22 33 Z" fill="#C9A24B"/>
+          <path d="M42 30 L38 27 L30 30 L38 33 Z" fill="#C9A24B"/>
+          <path d="M30 30 L27 38 L30 44 L33 38 Z" fill="#C9A24B"/>
+          <circle cx="30" cy="30" r="3" fill="#C9A24B"/>
+        </svg>
+        <div class="brand-text">
+          <span class="full" data-en>CardioMetabolic Excellence Academy Georgia</span>
+          <span class="full" data-ka>საქართველოს კარდიომეტაბოლური სპეციალიზაციის აკადემია</span>
+          <p>
+            <span data-en>A programme of the Georgian Atherosclerosis Association, training the region's future cardiometabolic leaders.</span>
+            <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის პროგრამა, რომელიც ამზადებს რეგიონის მომავალ კარდიომეტაბოლურ ლიდერებს.</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-en>Academy</h5>
+        <h5 data-ka>აკადემია</h5>
+        <a href="#about" data-en>About</a>
+        <a href="#about" data-ka>შესახებ</a>
+        <a href="#courses" data-en>Courses</a>
+        <a href="#courses" data-ka>კურსები</a>
+        <a href="#fellows" data-en>Young Fellows</a>
+        <a href="#fellows" data-ka>Young Fellows</a>
+        <a href="roadmap.html" data-en>Course Catalogue</a>
+        <a href="roadmap.html" data-ka>კურსების კატალოგი</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-en>Network</h5>
+        <h5 data-ka>ქსელი</h5>
+        <a href="https://athero-geo.com" data-en>Georgian Atherosclerosis Association</a>
+        <a href="https://athero-geo.com" data-ka>ათეროსკლეროზის ასოციაცია</a>
+        <a href="https://athero-geo.com" data-en>Georgian-LCN</a>
+        <a href="https://athero-geo.com" data-ka>Georgian-LCN</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-en>Contact</h5>
+        <h5 data-ka>კონტაქტი</h5>
+        <a href="mailto:infoathero@gmail.com">infoathero@gmail.com</a>
+        <p data-en>Tbilisi, Georgia</p>
+        <p data-ka>თბილისი, საქართველო</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-en>© 2026 CardioMetabolic Excellence Academy Georgia. All rights reserved.</span>
+      <span data-ka>© 2026 საქართველოს კარდიომეტაბოლური სპეციალიზაციის აკადემია. ყველა უფლება დაცულია.</span>
+      <span data-en>Part of the Georgian Atherosclerosis Association network</span>
+      <span data-ka>საქართველოს ათეროსკლეროზის ასოციაციის ქსელის ნაწილი</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function prefillInterest(value) {
+    var select = document.getElementById('interest');
+    if (select) { select.value = value; }
+    var field = select ? select.closest('.form-field') : null;
+    if (field) {
+      field.style.transition = 'box-shadow 0.3s ease';
+      field.style.boxShadow = '0 0 0 2px #0E7C7B';
+      setTimeout(function() { field.style.boxShadow = 'none'; }, 1800);
+    }
+  }
+
+  function setLang(lang) {
+    document.documentElement.setAttribute('lang', lang);
+    document.documentElement.setAttribute('data-lang', lang);
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ka').classList.toggle('active', lang === 'ka');
+    document.getElementById('page-title').textContent = lang === 'ka'
+      ? 'საქართველოს კარდიომეტაბოლური სპეციალიზაციის აკადემია | CMEA'
+      : 'CardioMetabolic Excellence Academy Georgia | CMEA';
+    try { localStorage.setItem('cmea-lang', lang); } catch(e) {}
+  }
+
+  (function initLang() {
+    var saved = 'en';
+    try { saved = localStorage.getItem('cmea-lang') || 'en'; } catch(e) {}
+    setLang(saved);
+  })();
+
+  document.getElementById('cmea-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = e.target;
+    var data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        form.reset();
+      }
+    }).catch(function() {
+      document.getElementById('form-success').style.display = 'block';
+    });
+  });
+
+  document.getElementById('congress-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = e.target;
+    var data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        document.getElementById('congress-form-success').style.display = 'block';
+        form.reset();
+      }
+    }).catch(function() {
+      document.getElementById('congress-form-success').style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
