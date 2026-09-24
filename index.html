@@ -478,7 +478,7 @@
           <span class="only-en">Register Here</span>
           <span class="only-ka" lang="ka">დარეგისტრირდით</span>
         </h3>
-        <form id="conf-form" action="https://formspree.io/f/xvznyglo" method="POST" enctype="multipart/form-data">
+        <form id="conf-form" action="https://formspree.io/f/xvznyglo" method="POST">
 
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-bottom:1.1rem;">
             <label style="cursor:pointer;">
@@ -531,14 +531,10 @@
             <label for="conf-abstract" style="display:block; font-size:12px; font-weight:500; color:var(--text-muted); margin-bottom:4px;">
               <span class="only-en">Abstract title</span><span class="only-ka" lang="ka">აბსტრაქტის სათაური</span>
             </label>
-            <input type="text" id="conf-abstract" name="abstract_title" style="width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:5px; font-size:14px; font-family:'Inter',sans-serif; margin-bottom:0.75rem;">
-
-            <label for="conf-abstract-file" style="display:block; font-size:12px; font-weight:500; color:var(--text-muted); margin-bottom:4px;">
-              <span class="only-en">Abstract file (PDF or Word)</span><span class="only-ka" lang="ka">აბსტრაქტის ფაილი (PDF ან Word)</span>
-            </label>
-            <input type="file" id="conf-abstract-file" name="abstract_file" accept=".pdf,.doc,.docx" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:5px; font-size:13px; font-family:'Inter',sans-serif; background:var(--bg);">
-            <p style="font-size:11px; color:var(--text-muted); margin-top:4px;">
-              <span class="only-en">Max 10 MB.</span><span class="only-ka ka" lang="ka">მაქსიმუმ 10 MB.</span>
+            <input type="text" id="conf-abstract" name="abstract_title" style="width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:5px; font-size:14px; font-family:'Inter',sans-serif;">
+            <p style="font-size:11.5px; color:var(--text-muted); line-height:1.6; margin-top:8px; background:var(--teal-light); padding:0.6rem 0.75rem; border-radius:6px;">
+              <span class="only-en">After submitting this form, please email your full abstract (PDF or Word) to <a href="mailto:infoathero@gmail.com?subject=Abstract%20Submission%20%E2%80%94%208th%20International%20Scientific%20Conference" style="color:var(--teal); font-weight:600;">infoathero@gmail.com</a>, including your name in the subject line.</span>
+              <span class="only-ka ka" lang="ka">ფორმის გაგზავნის შემდეგ, გთხოვთ, თქვენი სრული აბსტრაქტი (PDF ან Word) გამოაგზავნოთ <a href="mailto:infoathero@gmail.com?subject=Abstract%20Submission%20%E2%80%94%208th%20International%20Scientific%20Conference" style="color:var(--teal); font-weight:600;">infoathero@gmail.com</a>-ზე, სათაურში მიუთითეთ თქვენი სახელი და გვარი.</span>
             </p>
           </div>
           <div style="margin-bottom:1.1rem;">
@@ -963,7 +959,6 @@ function setLang(lang) {
   var radios = document.querySelectorAll('.conf-role-radio');
   var abstractWrap = document.getElementById('conf-abstract-wrap');
   var abstractInput = document.getElementById('conf-abstract');
-  var abstractFileInput = document.getElementById('conf-abstract-file');
   function refreshCards() {
     radios.forEach(function(r) {
       var card = r.nextElementSibling;
@@ -978,7 +973,6 @@ function setLang(lang) {
     var speakerSelected = document.querySelector('.conf-role-radio[value="Speaker"]').checked;
     abstractWrap.style.display = speakerSelected ? 'block' : 'none';
     if (abstractInput) abstractInput.required = speakerSelected;
-    if (abstractFileInput) abstractFileInput.required = speakerSelected;
   }
   radios.forEach(function(r) { r.addEventListener('change', refreshCards); });
   refreshCards();
