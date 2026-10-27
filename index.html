@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Georgian Atherosclerosis Association">
 <meta property="og:title" content="7th International Scientific Conference | Tbilisi, November 7, 2026">
-<meta property="og:description" content="Modern Principles of Diagnosis and Treatment of Atherosclerosis and Cerebrovascular Syndromes. Khedi Hotel Tbilisi, Avlabari. Registration fee: 50 GEL.">
+<meta property="og:description" content="Modern Principles of Diagnosis and Treatment of Atherosclerosis and Cerebrovascular Syndromes. Khedi Hotel Tbilisi, Avlabari. Registration fee: 50 GEL. Registration open until November 6, 2026.">
 <meta property="og:url" content="https://athero-geo.com/">
 <meta property="og:image" content="https://athero-geo.com/og-banner.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -292,6 +292,23 @@
   }
   .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
  
+
+  /* PROGRAMME */
+  .prog { max-width: 880px; margin: 3rem auto 0; text-align: left; }
+  .prog-head { text-align: center; margin-bottom: 1.25rem; }
+  .prog-head h3 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--navy); }
+  .prog-head p { font-size: 13.5px; color: var(--text-muted); margin-top: 4px; }
+  .prog-sec { margin: 1.75rem 0 0.5rem; padding: 0.65rem 1rem; background: var(--navy); color: var(--white); border-radius: 8px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .prog-row { display: grid; grid-template-columns: 84px 1fr; gap: 1rem; padding: 0.95rem 0.5rem; border-bottom: 1px solid var(--border); }
+  .prog-time { font-weight: 700; color: var(--teal); font-size: 15px; font-variant-numeric: tabular-nums; padding-top: 1px; }
+  .prog-title { font-weight: 700; color: var(--navy); font-size: 15px; line-height: 1.5; }
+  .prog-plain .prog-title { font-weight: 600; color: var(--text); font-size: 14.5px; }
+  .prog-break { background: var(--gold-light); border-radius: 8px; border-bottom-color: transparent; margin: 0.35rem 0; }
+  .prog-spk { margin-top: 0.35rem; font-weight: 600; color: var(--teal); font-size: 14px; }
+  .prog-cred { margin-top: 0.25rem; font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
+  .prog-note { margin-top: 1rem; font-size: 12px; color: var(--text-muted); text-align: center; }
+  @media (max-width: 600px) { .prog-row { grid-template-columns: 1fr; gap: 0.2rem; } .prog-head h3 { font-size: 24px; } }
+
   /* LANG VISIBILITY */
   body.lang-en .only-ka { display: none !important; }
   body.lang-ka .only-en { display: none !important; }
@@ -436,46 +453,34 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
       <div><strong style="color:var(--navy);"><span class="only-en">Venue</span><span class="only-ka" lang="ka">ადგილი</span></strong>: Khedi Hotel Tbilisi, Avlabari</div>
     </div>
 
-    <div style="max-width:640px; margin:2.5rem auto 0; text-align:left; display:flex; flex-direction:column; gap:1.25rem;">
-
-      <div id="speakers" style="background:var(--white); border:1px solid var(--border); border-top:3px solid var(--gold); border-radius:10px; padding:1.5rem 1.75rem;">
-        <h4 style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--navy); margin-bottom:0.9rem;">
-          <span class="only-en">Lectures and Speakers</span>
-          <span class="only-ka" lang="ka">მოხსენებები და მომხსენებლები</span>
-        </h4>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:12px;">
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">Clinical Intelligence in the Prevention of Cardiovascular Diseases</strong><br>Tea Gamezardashvili, MD, PhD, MHA, FACC — President of the Georgian Atherosclerosis Association; Associate Professor, University of Georgia; Clinical Director, Clinic “Remedical”</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">კლინიკური ინტელექტი გულ-სისხლძარღვთა დაავადებების პრევენციაში</strong><br>თეა გამეზარდაშვილი, MD, PhD, MHA, FACC — საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი; საქართველოს უნივერსიტეტის ასოცირებული პროფესორი; კლინიკა „რემედიკალის“ კლინიკური დირექტორი</span>
-          </li>
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">When and How to Initiate Combination Lipid-Lowering Therapy in High Cardiovascular Risk Patients</strong><br>Kakha Nadaria, MD, PhD, FESC — Associate Professor, University of Georgia; Head of Clinical and Interventional Cardiology and Internal Medicine Department, TSU University Clinic “Vivamedi”; Head of the Working Group on Acute Cardiac Care Management, Georgian Society of Cardiology</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">კომბინირებული ლიპიდდამწევი თერაპიის დაწყების დრო და მეთოდი მაღალი კარდიოვასკულური რისკის პაციენტებში</strong><br>კახა ნადარია, MD, PhD, FESC — საქართველოს უნივერსიტეტის ასოცირებული პროფესორი; თსუ საუნივერსიტეტო კლინიკა „ვივამედის“ კლინიკური და ინტერვენციული კარდიოლოგიისა და შინაგან სნეულებათა დეპარტამენტის ხელმძღვანელი; საქართველოს კარდიოლოგთა საზოგადოების მწვავე კარდიოლოგიური დახმარების მართვის სამუშაო ჯგუფის ხელმძღვანელი</span>
-          </li>
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">From Biomarker to Clinical Decision: The Laboratory Perspective in Atherosclerosis Assessment</strong><br>Manana Akhvlediani, MD, PhD — Head of the Laboratory Service, Todua Clinic; President of the Georgian Association of Laboratory Medicine</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">ბიომარკერიდან კლინიკურ გადაწყვეტილებამდე: ლაბორატორიული პერსპექტივა ათეროსკლეროზის შეფასებაში</strong><br>მანანა ახვლედიანი, MD, PhD — ტოდუას კლინიკის ლაბორატორიული სამსახურის ხელმძღვანელი; საქართველოს ლაბორატორიული მედიცინის ასოციაციის პრეზიდენტი</span>
-          </li>
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">The Integrated Role of PET/CT and Coronary CT Angiography in the Assessment of High-Risk Atherosclerotic Plaques</strong><br>Nana Nikolaishvili, MD, PhD — Associate Professor, Caucasus International University; Cardioradiologist, National Center of Surgery</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">PET/CT-ისა და კორონარული CT ანგიოგრაფიის ინტეგრირებული როლი მაღალი რისკის ათეროსკლეროზული ფოლაქების შეფასებაში</strong><br>ნანა ნიკოლაიშვილი, MD, PhD — კავკასიის საერთაშორისო უნივერსიტეტის ასოცირებული პროფესორი; ქირურგიის ეროვნული ცენტრის კარდიორადიოლოგი</span>
-          </li>
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">Atherosclerosis as the Polymorphic and Multigenic Basis of Vascular Pathologies</strong><br>Rima Beriashvili, MD, PhD — Vice-Rector, TSMU</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">ათეროსკლეროზი როგორც სისხლძარღვოვანი პათოლოგიების პოლიმორფული და მულტიგენური საფუძველი</strong><br>რიმა ბერიაშვილი, MD, PhD — თბილისის სახელმწიფო სამედიცინო უნივერსიტეტის ვიცე-რექტორი</span>
-          </li>
-          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
-            <span style="color:var(--gold); flex-shrink:0;">›</span>
-            <span class="only-en"><strong style="color:var(--navy);">Dyslipidemia Management in Georgia: Review of Updated Guidelines and Current Challenges</strong><br>Nino Svanidze, MD, PhD — Cardiologist, NNLE “Remedical”</span>
-            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">დისლიპიდემიის მართვა საქართველოში: განახლებული გაიდლაინების მიმოხილვა და არსებული გამოწვევები</strong><br>ნინო სვანიძე, MD, PhD — კარდიოლოგი, ააიპ „რემედიკალი“</span>
-          </li>
-        </ul>
+    
+    <div id="programme" class="prog">
+      <span id="speakers"></span>
+      <div class="prog-head">
+        <h3><span class="only-en">Conference Programme</span><span class="only-ka" lang="ka">კონფერენციის პროგრამა</span></h3>
+        <p><span class="only-en">November 7, 2026 · Khedi Hotel Tbilisi, Avlabari</span><span class="only-ka" lang="ka">2026 წლის 7 ნოემბერი · სასტუმრო „ხედი“, ავლაბარი</span></p>
       </div>
+      <div class="prog-row prog-plain"><div class="prog-time">10:00</div><div><div class="only-en prog-title">Registration</div><div class="only-ka prog-title" lang="ka">რეგისტრაცია</div></div></div>
+      <div class="prog-row prog-plain"><div class="prog-time">10:30</div><div><div class="only-en prog-title">Welcoming Coffee</div><div class="only-ka prog-title" lang="ka">მისასალმებელი ყავა</div></div></div>
+      <div class="prog-row prog-plain"><div class="prog-time">11:00</div><div><div class="only-en prog-title">Opening Remarks &amp; Welcoming Speeches</div><div class="only-ka prog-title" lang="ka">გახსნა და მისასალმებელი სიტყვები</div></div></div>
+      <div class="prog-sec"><span class="only-en">Scientific Session</span><span class="only-ka" lang="ka">სამეცნიერო სესია</span></div>
+      <div class="prog-row"><div class="prog-time">11:05</div><div><div class="only-en"><div class="prog-title">Integrating the Cardio-Metabolic-Lifestyle Axis for Brain and Heart Prevention</div><div class="prog-spk">Meral Kayıkçıoğlu</div><div class="prog-cred">Professor of Cardiology<br>Head of the Department of Cardiology, Ege University School of Medicine, İzmir, Türkiye<br>Executive Committee Member, European Atherosclerosis Society (EAS)<br>Vice Director, Ege University Research and Application Center of Drug Development and Pharmacokinetics (ARGEFAR)</div></div><div class="only-ka" lang="ka"><div class="prog-title">კარდიომეტაბოლური და ცხოვრების წესის ღერძის ინტეგრაცია ტვინისა და გულის პრევენციისთვის</div><div class="prog-spk">მერალ ქაიქჩიოღლუ</div><div class="prog-cred">კარდიოლოგიის პროფესორი<br>ეგეს უნივერსიტეტის სამედიცინო სკოლის (იზმირი, თურქეთი) კარდიოლოგიის დეპარტამენტის ხელმძღვანელი<br>ევროპის ათეროსკლეროზის საზოგადოების (EAS) აღმასრულებელი კომიტეტის წევრი<br>ეგეს უნივერსიტეტის წამლების შემუშავებისა და ფარმაკოკინეტიკის კვლევისა და გამოყენების ცენტრის (ARGEFAR) დირექტორის მოადგილე</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">11:25</div><div><div class="only-en"><div class="prog-title">Clinical Intelligence in the Prevention of Cardiovascular Diseases</div><div class="prog-spk">Tea Gamezardashvili, MD, PhD, MHA, FACC</div><div class="prog-cred">President, Georgian Atherosclerosis Association<br>National Coordinator, Lipid Clinic Network<br>Associate Professor, University of Georgia<br>Clinical Director, University Clinic “Remedical”</div></div><div class="only-ka" lang="ka"><div class="prog-title">კლინიკური ინტელექტი გულ-სისხლძარღვთა დაავადებათა პრევენციაში</div><div class="prog-spk">თეა გამეზარდაშვილი, MD, PhD, MHA, FACC</div><div class="prog-cred">საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი<br>ლიპიდური კლინიკების საერთაშორისო ქსელის ეროვნული კოორდინატორი<br>საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>საუნივერსიტეტო კლინიკა „რემედიქალის“ კლინიკური დირექტორი</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">11:45</div><div><div class="only-en"><div class="prog-title">From Screening to Follow-up: A Digital Model of Cardio-metabolic Risk Assessment in the Rural Population of Kazakhstan</div><div class="prog-spk">Mahabbat Bekbossynova, MD, DSc</div><div class="prog-cred">Deputy Chair of the Board, University Medical Center<br>Chief Cardiologist, Ministry of Health of Kazakhstan<br>President, Kazakhstan Atherosclerosis Society<br>Board Member, International Atherosclerosis Society (IAS)<br>National Leader, Kazakhstan’s Lipid Clinic Network</div></div><div class="only-ka" lang="ka"><div class="prog-title">სკრინინგიდან შემდგომ მეთვალყურეობამდე: კარდიომეტაბოლური რისკის შეფასების ციფრული მოდელი ყაზახეთის სოფლის მოსახლეობაში</div><div class="prog-spk">მაჰაბბათ ბექბოსინოვა, MD, DSc</div><div class="prog-cred">უნივერსიტეტის სამედიცინო ცენტრის გამგეობის თავმჯდომარის მოადგილე<br>ყაზახეთის ჯანდაცვის სამინისტროს მთავარი კარდიოლოგი<br>ყაზახეთის ათეროსკლეროზის საზოგადოების პრეზიდენტი<br>ათეროსკლეროზის საერთაშორისო საზოგადოების (IAS) გამგეობის წევრი<br>ყაზახეთის ლიპიდური კლინიკების ქსელის ეროვნული ლიდერი</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">12:05</div><div><div class="only-en"><div class="prog-title">What Challenges Do We Face Beyond LDL Cholesterol Lowering? Assessment and Management of Residual Risk in Cardiovascular Disease</div><div class="prog-spk">Kakha Nadaria, MD, PhD, FESC</div><div class="prog-cred">Associate Professor, University of Georgia<br>Head of Clinical and Interventional Cardiology and Internal Medicine Department, TSU University Clinic “Vivamed”<br>Head of the Working Group on Acute Cardiac Care Management, Georgian Society of Cardiology<br>Member of the Board, Georgian Atherosclerosis Association</div></div><div class="only-ka" lang="ka"><div class="prog-title">რა გამოწვევები გვაქვს დაბალი სიმკვრივის ქოლესტეროლის დაქვეითების მიღმა? ნარჩენი რისკის შეფასება და მართვა კარდიოვასკულური დაავადებების დროს</div><div class="prog-spk">კახა ნადარაია, MD, PhD, FESC</div><div class="prog-cred">საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>კლინიკური და ინტერვენციული კარდიოლოგიისა და შინაგანი მედიცინის დეპარტამენტის ხელმძღვანელი, თსუ საუნივერსიტეტო კლინიკა „ვივამედი“<br>საქართველოს კარდიოლოგთა საზოგადოების მწვავე კარდიოლოგიური პათოლოგიების მართვის სამუშაო ჯგუფის ხელმძღვანელი<br>საქართველოს ათეროსკლეროზის ასოციაციის გამგეობის წევრი</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">12:25</div><div><div class="only-en"><div class="prog-title">Beyond Statins: The Role of Inclisiran in Cardiovascular Secondary Prevention</div><div class="prog-spk">Tamar Gaprindashvili, MD, FACC</div><div class="prog-cred">Head of the Cardio-Oncology Unit, N. Bokhua Clinic</div></div><div class="only-ka" lang="ka"><div class="prog-title">სტატინებს მიღმა: ინკლისირანის როლი გულ-სისხლძარღვთა დაავადებათა მეორად პრევენციაში</div><div class="prog-spk">თამარ გაფრინდაშვილი, MD, FACC</div><div class="prog-cred">კარდიო-ონკოლოგიის განყოფილების ხელმძღვანელი, ნ. ბოხუას სახელობის კლინიკა</div></div></div></div>
+      <div class="prog-row prog-plain prog-break"><div class="prog-time">12:45</div><div><div class="only-en prog-title">Break</div><div class="only-ka prog-title" lang="ka">შესვენება</div></div></div>
+      <div class="prog-row"><div class="prog-time">13:20</div><div><div class="only-en"><div class="prog-title">From Biomarker to Clinical Decision: The Laboratory Perspective in Atherosclerosis Assessment</div><div class="prog-spk">Manana Akhvlediani, MD, PhD</div><div class="prog-cred">Head of the Laboratory Service, Todua Clinic<br>Professor, Caucasus University<br>President, Georgian Association of Laboratory Medicine</div></div><div class="only-ka" lang="ka"><div class="prog-title">ბიომარკერიდან კლინიკურ გადაწყვეტილებამდე: „ლაბორატორიული მედიცინის როლი ათეროსკლეროზის შეფასებაში“</div><div class="prog-spk">მანანა ახვლედიანი, MD, PhD</div><div class="prog-cred">თოდუას კლინიკის ლაბორატორიული სამსახურის ხელმძღვანელი<br>კავკასიის უნივერსიტეტის პროფესორი<br>საქართველოს ლაბორატორიული მედიცინის ასოციაციის პრეზიდენტი</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">13:40</div><div><div class="only-en"><div class="prog-title">Integrated Role of PET/CT and Coronary CT Angiography in the Assessment of High-Risk Atherosclerotic Plaques</div><div class="prog-spk">Nana Nikolaishvili, MD, PhD</div><div class="prog-cred">Head of Residency Program, K. Eristavi National Center of Surgery</div></div><div class="only-ka" lang="ka"><div class="prog-title">PET/CT-ისა და კორონარული CT ანგიოგრაფიის ინტეგრირებული როლი მაღალი რისკის ათეროსკლეროზული ფოლაქის შეფასებაში</div><div class="prog-spk">ნანა ნიკოლაიშვილი, MD, PhD</div><div class="prog-cred">კავკასიის საერთაშორისო უნივერსიტეტის ასოცირებული პროფესორი<br>ქირურგიის ეროვნული ცენტრის კარდიორადიოლოგი</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">14:00</div><div><div class="only-en"><div class="prog-title">Cryptogenic Stroke and Occult Arrhythmias: From Diagnosis to Secondary Prevention</div><div class="prog-spk">Eliso Dgebuadze, MD, PhD</div><div class="prog-cred">Assistant Professor, Caucasus International University<br>TSU University Clinic “Vivamed”</div></div><div class="only-ka" lang="ka"><div class="prog-title">კრიპტოგენული ინსულტი და ფარული არითმიები: დიაგნოსტიკიდან მეორეულ პრევენციამდე</div><div class="prog-spk">ელისო დგებუაძე, MD, PhD</div><div class="prog-cred">კავკასიის საერთაშორისო უნივერსიტეტის ასისტენტ-პროფესორი<br>თსუ საუნივერსიტეტო კლინიკა „ვივამედი“</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">14:20</div><div><div class="only-en"><div class="prog-title">Management of Dyslipidemia Across the Lifespan of a Woman</div><div class="prog-spk">Nino Svanidze, MD, PhD</div><div class="prog-cred">Assistant Professor, Georgian National University<br>Cardiologist, “Remedical” University Clinic</div></div><div class="only-ka" lang="ka"><div class="prog-title">დისლიპიდემიის მართვა ქალის სიცოცხლის სხვადასხვა ეტაპზე</div><div class="prog-spk">ნინო სვანიძე, MD, PhD</div><div class="prog-cred">საქართველოს ეროვნული უნივერსიტეტის ასისტენტ-პროფესორი<br>კარდიოლოგი, საუნივერსიტეტო კლინიკა „რემედიქალი“</div></div></div></div>
+      <div class="prog-row"><div class="prog-time">14:40</div><div><div class="only-en"><div class="prog-title">Challenges of Early Lipid-Lowering and Anti-Inflammatory Therapy in Patients at Very High and Extreme Risk</div><div class="prog-spk">Kakha Nadaria, MD, PhD, FESC</div><div class="prog-cred">Associate Professor, University of Georgia<br>Head of Clinical and Interventional Cardiology and Internal Medicine Department, TSU University Clinic “Vivamed”<br>Head of the Working Group on Acute Cardiac Care Management, Georgian Society of Cardiology<br>Member of the Board, Georgian Atherosclerosis Association</div></div><div class="only-ka" lang="ka"><div class="prog-title">ადრეული ლიპიდდამაქვეითებელი და ანტიანთებითი თერაპიის გამოწვევები ძალიან მაღალი და ექსტრემალური კარდიოვასკულური რისკის პაციენტებში</div><div class="prog-spk">კახა ნადარაია, MD, PhD, FESC</div><div class="prog-cred">საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>კლინიკური და ინტერვენციული კარდიოლოგიისა და შინაგანი მედიცინის დეპარტამენტის ხელმძღვანელი, თსუ საუნივერსიტეტო კლინიკა „ვივამედი“<br>საქართველოს კარდიოლოგთა საზოგადოების მწვავე კარდიოლოგიური პათოლოგიების მართვის სამუშაო ჯგუფის ხელმძღვანელი<br>საქართველოს ათეროსკლეროზის ასოციაციის გამგეობის წევრი</div></div></div></div>
+      <div class="prog-row prog-plain"><div class="prog-time">15:00</div><div><div class="only-en prog-title">Discussion &amp; Q&amp;A</div><div class="only-ka prog-title" lang="ka">დისკუსია და კითხვა-პასუხი</div></div></div>
+      <div class="prog-row prog-plain"><div class="prog-time">15:30</div><div><div class="only-en prog-title">Closing Remarks</div><div class="only-ka prog-title" lang="ka">დასკვნითი სიტყვა</div></div></div>
+      <p class="prog-note"><span class="only-en">Programme subject to change.</span><span class="only-ka" lang="ka">პროგრამა შეიძლება შეიცვალოს.</span></p>
+    </div>
+
+    <div style="max-width:640px; margin:2.5rem auto 0; text-align:left; display:flex; flex-direction:column; gap:1.25rem;">
 
       <div style="background:var(--white); border:1px solid var(--border); border-top:3px solid var(--teal); border-radius:10px; padding:1.5rem 1.75rem;">
         <h4 style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--navy); margin-bottom:0.9rem;">
@@ -487,6 +492,11 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
             <span style="color:var(--gold); flex-shrink:0;">›</span>
             <span class="only-en"><strong style="color:var(--navy);">Registration fee: 50 GEL.</strong></span>
             <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">სარეგისტრაციო გადასახადი: 50 ლარი.</strong></span>
+          </li>
+          <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
+            <span style="color:var(--gold); flex-shrink:0;">›</span>
+            <span class="only-en"><strong style="color:var(--navy);">Registration deadline: November 6, 2026.</strong></span>
+            <span class="only-ka ka" lang="ka"><strong style="color:var(--navy);">რეგისტრაციის ბოლო ვადა: 2026 წლის 6 ნოემბერი.</strong></span>
           </li>
           <li style="display:flex; gap:8px; font-size:13.5px; color:var(--text); line-height:1.6;">
             <span style="color:var(--gold); flex-shrink:0;">›</span>
