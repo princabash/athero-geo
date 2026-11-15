@@ -309,6 +309,76 @@
   .prog-note { margin-top: 1rem; font-size: 12px; color: var(--text-muted); text-align: center; }
   @media (max-width: 600px) { .prog-row { grid-template-columns: 1fr; gap: 0.2rem; } .prog-head h3 { font-size: 24px; } }
 
+
+  /* ===== CMEA WEBINAR SERIES (cw-) ===== */
+  .cw-section { background: #FFFFFF; padding: 4.5rem 2.5rem; border-top: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; }
+  .cw-inner { max-width: 1100px; margin: 0 auto; }
+  .cw-head { max-width: 760px; margin: 0 auto 2.5rem; text-align: center; }
+  .cw-eyebrow { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #C8922A; margin-bottom: 0.8rem; }
+  .cw-head h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.25; color: #0D2B4E; margin-bottom: 0.8rem; }
+  .cw-head p { font-size: 15.5px; color: #5A5A5A; line-height: 1.75; }
+  .cw-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+  .cw-chip { font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px; background: #FBF3E4; color: #0D2B4E; border: 1px solid #E0E0E0; }
+  .cw-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; margin-bottom: 2.5rem; }
+  .cw-card { background: #FAFAFA; border: 1px solid #E0E0E0; border-top: 3px solid #0E7C7B; border-radius: 6px; padding: 1.5rem 1.6rem; display: flex; flex-direction: column; gap: 0.55rem; }
+  .cw-card-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .cw-num { font-family: Georgia, serif; font-size: 13px; letter-spacing: 0.08em; color: #C8922A; font-weight: 700; text-transform: uppercase; }
+  .cw-price-tag { font-size: 13px; font-weight: 700; color: #0D2B4E; background: #FBF3E4; padding: 3px 10px; border-radius: 4px; white-space: nowrap; }
+  .cw-card h3 { font-size: 16.5px; line-height: 1.45; color: #0D2B4E; font-weight: 700; font-family: inherit; }
+  .cw-card p { font-size: 13.5px; color: #5A5A5A; line-height: 1.6; margin: 0; }
+  .cw-aud { font-size: 12px; color: #0E7C7B; font-weight: 600; margin-top: auto; padding-top: 0.4rem; }
+  .cw-date { font-size: 13px; color: #0D2B4E; font-weight: 700; }
+  .cw-pricing { display: grid; grid-template-columns: 1fr 1.25fr; gap: 1.1rem; margin-bottom: 1.1rem; }
+  .cw-plan { background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 6px; padding: 1.6rem; text-align: center; }
+  .cw-plan.best { background: #0D2B4E; border-color: #0D2B4E; color: #fff; position: relative; }
+  .cw-plan .cw-plan-name { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #5A5A5A; }
+  .cw-plan.best .cw-plan-name { color: #C8922A; }
+  .cw-plan .cw-amount { font-family: Georgia, serif; font-size: 2.6rem; line-height: 1.1; color: #0D2B4E; margin: 0.4rem 0 0.2rem; }
+  .cw-plan.best .cw-amount { color: #C8922A; }
+  .cw-plan .cw-amount small { font-size: 1rem; }
+  .cw-plan p { font-size: 13.5px; color: #5A5A5A; margin: 0; line-height: 1.6; }
+  .cw-plan.best p { color: rgba(255,255,255,0.8); }
+  .cw-strike { text-decoration: line-through; opacity: 0.6; margin-right: 6px; font-size: 1.1rem; }
+  .cw-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: #C8922A; color: #0D2B4E; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; padding: 4px 12px; border-radius: 12px; white-space: nowrap; }
+  .cw-credit { display: flex; gap: 1rem; align-items: flex-start; background: #E6F4F4; border: 1px solid #0E7C7B; border-radius: 6px; padding: 1.2rem 1.4rem; margin-bottom: 2.5rem; }
+  .cw-credit-icon { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: #0E7C7B; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; }
+  .cw-credit h4 { font-size: 15px; color: #0D2B4E; margin-bottom: 4px; font-family: inherit; font-weight: 700; }
+  .cw-credit p { font-size: 13.5px; color: #5A5A5A; line-height: 1.65; margin: 0; }
+  .cw-reg { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 2.5rem; align-items: start; }
+  .cw-steps h3 { font-size: 19px; color: #0D2B4E; margin-bottom: 1rem; font-family: inherit; font-weight: 700; }
+  .cw-step { display: flex; gap: 0.9rem; padding: 0.75rem 0; border-bottom: 1px solid #E0E0E0; }
+  .cw-step:last-child { border-bottom: none; }
+  .cw-step b { font-family: Georgia, serif; color: #C8922A; font-size: 18px; width: 22px; flex-shrink: 0; }
+  .cw-step span { font-size: 14px; color: #1C1C1C; line-height: 1.6; }
+  .cw-small { font-size: 12px; color: #5A5A5A; line-height: 1.6; margin-top: 1rem; }
+  .cw-form { background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 6px; padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .cw-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+  .cw-field { display: flex; flex-direction: column; gap: 5px; }
+  .cw-field label, .cw-legend { font-size: 12.5px; font-weight: 700; color: #0D2B4E; }
+  .cw-field input, .cw-field select { border: 1px solid #E0E0E0; background: #fff; padding: 11px 13px; font-size: 14px; border-radius: 4px; color: #1C1C1C; font-family: inherit; width: 100%; }
+  .cw-field input:focus, .cw-field select:focus { outline: none; border-color: #0E7C7B; }
+  .cw-choice { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid #E0E0E0; border-radius: 4px; cursor: pointer; font-size: 13.5px; color: #1C1C1C; line-height: 1.45; background: #fff; }
+  .cw-field .cw-choice input { width: auto; padding: 0; border: 0; margin-top: 3px; accent-color: #0E7C7B; flex-shrink: 0; }
+  .cw-choice em { font-style: normal; font-weight: 700; color: #0D2B4E; margin-left: auto; padding-left: 8px; white-space: nowrap; }
+  .cw-choices { display: flex; flex-direction: column; gap: 6px; }
+  .cw-all { align-self: flex-start; background: none; border: 1px dashed #0E7C7B; color: #0E7C7B; font-size: 12.5px; font-weight: 700; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-family: inherit; }
+  .cw-total { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 12px 14px; background: #FBF3E4; border-radius: 4px; }
+  .cw-total-label { font-size: 13px; color: #5A5A5A; }
+  .cw-total-amount { font-family: Georgia, serif; font-size: 1.6rem; color: #0D2B4E; }
+  .cw-hint { font-size: 12.5px; color: #0E7C7B; font-weight: 600; min-height: 1em; }
+  .cw-submit { background: #C8922A; color: #0D2B4E; border: none; padding: 14px 26px; font-size: 14px; font-weight: 700; letter-spacing: 0.03em; border-radius: 4px; cursor: pointer; font-family: inherit; }
+  .cw-submit:hover { opacity: 0.9; }
+  .cw-status { font-size: 13.5px; line-height: 1.55; min-height: 1em; }
+  .cw-cta-strip { text-align: center; margin-top: 1rem; }
+  @media (max-width: 860px) {
+    .cw-grid, .cw-pricing, .cw-reg { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) { .cw-row { grid-template-columns: 1fr; } }
+
+  .cw-head h2 { font-family: 'Playfair Display', serif; }
+  body.lang-ka .cw-section { font-family: 'Noto Sans Georgian', 'Inter', sans-serif; }
+  @media (max-width: 640px) { .cw-section { padding: 3rem 1.25rem; } }
+
   /* LANG VISIBILITY */
   body.lang-en .only-ka { display: none !important; }
   body.lang-ka .only-en { display: none !important; }
@@ -372,6 +442,7 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
   </a>
   <ul class="nav-links">
     <li><a href="#about"><span class="only-en">About</span><span class="only-ka" lang="ka">ჩვენ შესახებ</span></a></li>
+    <li><a href="#webinars"><span class="only-en">CMEA Webinars</span><span class="only-ka" lang="ka">CMEA ვებინარები</span></a></li>
     <li><a href="#webinar"><span class="only-en">Webinar</span><span class="only-ka" lang="ka">ვებინარი</span></a></li>
     <li><a href="#conference"><span class="only-en">Conference</span><span class="only-ka" lang="ka">კონფერენცია</span></a></li>
     <li><a href="#news"><span class="only-en">News</span><span class="only-ka" lang="ka">სიახლეები</span></a></li>
@@ -414,6 +485,10 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
       <a href="#webinar" class="btn-primary">
         <span class="only-en">Webinar · 8 December · Register</span>
         <span class="only-ka" lang="ka">ვებინარი · 8 დეკემბერი · რეგისტრაცია</span>
+      </a>
+      <a href="#webinars" class="btn-outline">
+        <span class="only-en">CMEA webinar series · Register</span>
+        <span class="only-ka" lang="ka">CMEA ვებინარების სერია · რეგისტრაცია</span>
       </a>
       <a href="#membership" class="btn-outline">
         <span class="only-en">Become a member</span>
@@ -516,6 +591,166 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
   </div>
 </section>
 
+
+<!-- ============ CMEA WEBINAR SERIES ============ -->
+<!-- Prices: 35 GEL per webinar, 100 GEL for all four. Bundle buyers get 100 GEL off the accredited CME course. -->
+<section id="webinars" class="cw-section">
+  <div class="cw-inner">
+    <div class="cw-head">
+      <div class="cw-eyebrow"><span class="only-en">CMEA Online Series · Registration open</span><span class="only-ka" lang="ka">CMEA ონლაინ სერია · რეგისტრაცია ღიაა</span></div>
+      <h2><span class="only-en">Cardiometabolic Clinical Algorithms — 4 practical webinars</span><span class="only-ka" lang="ka">კარდიომეტაბოლური კლინიკური ალგორითმები — 4 პრაქტიკული ვებინარი</span></h2>
+      <p><span class="only-en">One-hour, case-based sessions for physicians: concrete decisions for the difficult patients you see every day, built on current ESC/EAS guidelines. 45 minutes of clinical algorithms and cases, 15 minutes of Q&amp;A.</span><span class="only-ka" lang="ka">1-საათიანი, ქეისებზე დაფუძნებული სესიები ექიმებისთვის: კონკრეტული გადაწყვეტილებები ყოველდღიური რთული პაციენტებისთვის, ESC/EAS-ის მოქმედი გაიდლაინების საფუძველზე. 45 წუთი — კლინიკური ალგორითმები და ქეისები, 15 წუთი — კითხვა-პასუხი.</span></p>
+      <div class="cw-meta">
+        <span class="cw-chip"><span class="only-en">1, 9, 16 &amp; 22 December · 20:00 (Tbilisi)</span><span class="only-ka" lang="ka">1, 9, 16 და 22 დეკემბერი · 20:00 (თბილისი)</span></span>
+        <span class="cw-chip"><span class="only-en">Online · Zoom</span><span class="only-ka" lang="ka">ონლაინ · Zoom</span></span>
+        <span class="cw-chip"><span class="only-en">60 minutes each</span><span class="only-ka" lang="ka">თითო — 60 წუთი</span></span>
+        <span class="cw-chip"><span class="only-en">In Georgian</span><span class="only-ka" lang="ka">ქართულ ენაზე</span></span>
+        <span class="cw-chip"><span class="only-en">35 ₾ each · 100 ₾ for all four</span><span class="only-ka" lang="ka">თითო 35 ₾ · ოთხივე 100 ₾</span></span>
+      </div>
+    </div>
+
+    <div class="cw-grid">
+      <div class="cw-card">
+        <div class="cw-card-top">
+          <span class="cw-num"><span class="only-en">Webinar 1</span><span class="only-ka" lang="ka">ვებინარი 1</span></span>
+          <span class="cw-price-tag">35 ₾</span>
+        </div>
+        <h3><span class="only-en">SCORE2-Diabetes and the “grey-zone” patient: when do we need carotid duplex and a CAC score?</span><span class="only-ka" lang="ka">SCORE2-Diabetes და „ნაცრისფერი ზონის“ პაციენტები: როდის გვჭირდება საძილე არტერიის დუპლექსი და CAC score?</span></h3>
+        <p><span class="only-en">Risk stratification beyond the score: SCORE2, SCORE2-Diabetes and imaging of subclinical atherosclerosis.</span><span class="only-ka" lang="ka">რისკის სტრატიფიკაცია შკალის მიღმა: SCORE2, SCORE2-Diabetes და სუბკლინიკური ათეროსკლეროზის ვიზუალიზაცია.</span></p>
+        <div class="cw-date">📅 <span class="only-en">Tuesday, 1 December 2026 · 20:00</span><span class="only-ka" lang="ka">სამშაბათი, 2026 წლის 1 დეკემბერი · 20:00</span></div>
+        <div class="cw-aud"><span class="only-en">Cardiology · Endocrinology · Radiology</span><span class="only-ka" lang="ka">კარდიოლოგია · ენდოკრინოლოგია · რადიოლოგია</span></div>
+      </div>
+      <div class="cw-card">
+        <div class="cw-card-top">
+          <span class="cw-num"><span class="only-en">Webinar 2</span><span class="only-ka" lang="ka">ვებინარი 2</span></span>
+          <span class="cw-price-tag">35 ₾</span>
+        </div>
+        <h3><span class="only-en">Statin intolerance, resistant LDL-C and high Lp(a): five practical lipid-clinic algorithms</span><span class="only-ka" lang="ka">სტატინ-აუტანლობა, რეზისტენტული LDL-C და მაღალი Lp(a): ლიპიდური კლინიკის 5 პრაქტიკული ალგორითმი</span></h3>
+        <p><span class="only-en">Managing statin intolerance, bempedoic acid, PCSK9 inhibitors and Lp(a) in everyday practice.</span><span class="only-ka" lang="ka">სტატინ-აუტანლობის მართვა, ბემპედოის მჟავა, PCSK9 ინჰიბიტორები და Lp(a) ყოველდღიურ პრაქტიკაში.</span></p>
+        <div class="cw-date">📅 <span class="only-en">Wednesday, 9 December 2026 · 20:00</span><span class="only-ka" lang="ka">ოთხშაბათი, 2026 წლის 9 დეკემბერი · 20:00</span></div>
+        <div class="cw-aud"><span class="only-en">Cardiology · Lipidology · Internal medicine</span><span class="only-ka" lang="ka">კარდიოლოგია · ლიპიდოლოგია · შინაგანი მედიცინა</span></div>
+      </div>
+      <div class="cw-card">
+        <div class="cw-card-top">
+          <span class="cw-num"><span class="only-en">Webinar 3</span><span class="only-ka" lang="ka">ვებინარი 3</span></span>
+          <span class="cw-price-tag">35 ₾</span>
+        </div>
+        <h3><span class="only-en">Diabetes, obesity and CKD in one patient: choosing SGLT2i, GLP-1 RA and finerenone regardless of glycaemia</span><span class="only-ka" lang="ka">დიაბეტი, სიმსუქნე და CKD ერთ პაციენტში: როგორ შევარჩიოთ SGLT2i, GLP-1 RA და ფინერენონი გლიკემიის მიუხედავად?</span></h3>
+        <p><span class="only-en">Cardiorenal protection in the comorbid patient — a joint view of the endocrinologist and the cardiologist.</span><span class="only-ka" lang="ka">კარდიორენალური პროტექცია კომორბიდულ პაციენტში — ენდოკრინოლოგისა და კარდიოლოგის ერთობლივი ხედვა.</span></p>
+        <div class="cw-date">📅 <span class="only-en">Wednesday, 16 December 2026 · 20:00</span><span class="only-ka" lang="ka">ოთხშაბათი, 2026 წლის 16 დეკემბერი · 20:00</span></div>
+        <div class="cw-aud"><span class="only-en">Endocrinology · Cardiology · Family medicine</span><span class="only-ka" lang="ka">ენდოკრინოლოგია · კარდიოლოგია · საოჯახო მედიცინა</span></div>
+      </div>
+      <div class="cw-card">
+        <div class="cw-card-top">
+          <span class="cw-num"><span class="only-en">Webinar 4</span><span class="only-ka" lang="ka">ვებინარი 4</span></span>
+          <span class="cw-price-tag">35 ₾</span>
+        </div>
+        <h3><span class="only-en">Asymptomatic carotid stenosis and peripheral artery disease: antithrombotic and lipid-lowering synergy</span><span class="only-ka" lang="ka">ასიმპტომური კაროტიდული სტენოზი და პერიფერიული არტერიების დაავადება: ანტითრომბოზული და ჰიპოლიპიდემიური სინერგია</span></h3>
+        <p><span class="only-en">Secondary stroke prevention and the antithrombotic management of peripheral atherosclerosis.</span><span class="only-ka" lang="ka">ინსულტის მეორეული პრევენცია და პერიფერიული ათეროსკლეროზის ანტითრომბოზული მართვა.</span></p>
+        <div class="cw-date">📅 <span class="only-en">Tuesday, 22 December 2026 · 20:00</span><span class="only-ka" lang="ka">სამშაბათი, 2026 წლის 22 დეკემბერი · 20:00</span></div>
+        <div class="cw-aud"><span class="only-en">Neurology · Angiology · Vascular radiology</span><span class="only-ka" lang="ka">ნევროლოგია · ანგიოლოგია · სისხლძარღვთა რადიოლოგია</span></div>
+      </div>
+    </div>
+
+    <div class="cw-pricing">
+      <div class="cw-plan">
+        <div class="cw-plan-name"><span class="only-en">Single webinar</span><span class="only-ka" lang="ka">ერთი ვებინარი</span></div>
+        <div class="cw-amount">35 <small>₾</small></div>
+        <p><span class="only-en">Choose any webinar you need. Each is sold separately.</span><span class="only-ka" lang="ka">აირჩიეთ ნებისმიერი ვებინარი. თითოეული იყიდება ცალ-ცალკე.</span></p>
+      </div>
+      <div class="cw-plan best">
+        <span class="cw-badge"><span class="only-en">Best value · save 40 ₾</span><span class="only-ka" lang="ka">საუკეთესო შეთავაზება · დაზოგეთ 40 ₾</span></span>
+        <div class="cw-plan-name"><span class="only-en">Full series · all 4 webinars</span><span class="only-ka" lang="ka">სრული სერია · 4 ვებინარი</span></div>
+        <div class="cw-amount"><span class="cw-strike">140</span>100 <small>₾</small></div>
+        <p><span class="only-en">All four webinars, plus the full 100 ₾ credited towards the accredited CMEA course.</span><span class="only-ka" lang="ka">ოთხივე ვებინარი + 100 ₾ სრულად ჩაგეთვლებათ CMEA-ს აკრედიტებული კურსის საფასურში.</span></p>
+      </div>
+    </div>
+
+    <div class="cw-credit">
+      <div class="cw-credit-icon">₾</div>
+      <div>
+        <h4><span class="only-en">Your 100 ₾ is not lost</span><span class="only-ka" lang="ka">თქვენი 100 ლარი არ იკარგება</span></h4>
+        <p><span class="only-en">CMEA is preparing a 12-hour accredited CME course, and its accreditation is under way. If you buy the full series of four webinars (100 ₾), that 100 ₾ will be deducted from the course fee when you enrol.</span><span class="only-ka" lang="ka">CMEA ამზადებს 12-საათიან უწყვეტი სამედიცინო განათლების (უსგ) კურსს, რომლის აკრედიტაციაც მიმდინარეობს. თუ შეიძენთ ოთხივე ვებინარის სრულ სერიას (100 ₾), ეს 100 ლარი გამოაკლდება კურსის საფასურს მასზე რეგისტრაციისას.</span></p>
+      </div>
+    </div>
+
+    <div class="cw-reg" id="webinar-register">
+      <div class="cw-steps">
+        <h3><span class="only-en">How registration works</span><span class="only-ka" lang="ka">როგორ ხდება რეგისტრაცია</span></h3>
+        <div class="cw-step"><b>1</b><span class="only-en">Fill in the form and choose the webinars you want, or the full series.</span><span class="only-ka" lang="ka">შეავსეთ ფორმა და აირჩიეთ სასურველი ვებინარები ან სრული სერია.</span></div>
+        <div class="cw-step"><b>2</b><span class="only-en">You will receive an email with the bank account details for payment.</span><span class="only-ka" lang="ka">ელ-ფოსტაზე მიიღებთ წერილს გადახდისთვის საჭირო საბანკო ანგარიშის ნომრით.</span></div>
+        <div class="cw-step"><b>3</b><span class="only-en">Your place is confirmed once payment is received.</span><span class="only-ka" lang="ka">ადგილი დადასტურდება თანხის ჩარიცხვის შემდეგ.</span></div>
+        <div class="cw-step"><b>4</b><span class="only-en">Before each webinar, we email you the Zoom link.</span><span class="only-ka" lang="ka">ყოველი ვებინარის წინ ელ-ფოსტაზე გამოგეგზავნებათ Zoom-ის ბმული.</span></div>
+        <p class="cw-small"><span class="only-en">The webinars themselves do not award CME (UPG) credits; credits are awarded by the accredited CMEA course. Questions: <a href="mailto:infoathero@gmail.com" style="text-decoration:underline">infoathero@gmail.com</a></span><span class="only-ka" lang="ka">თავად ვებინარები უპგ კრედიტ-ქულებს არ ანიჭებს; ქულებს ანიჭებს CMEA-ს აკრედიტებული კურსი. კითხვებისთვის: <a href="mailto:infoathero@gmail.com" style="text-decoration:underline">infoathero@gmail.com</a></span></p>
+      </div>
+
+      <form id="gaa-webinar-form" class="cw-form" action="https://formspree.io/f/xvznyglo" method="POST">
+        <input type="hidden" name="_subject" value="CMEA webinar series — new registration">
+        <input type="hidden" name="form" value="CMEA webinar registration">
+        <input type="hidden" name="package" value="">
+        <input type="hidden" name="selected_webinars" value="">
+        <input type="hidden" name="total_gel" value="">
+        <div class="cw-row">
+          <div class="cw-field">
+            <label for="gaa-webinar-form-name"><span class="only-en">Full name</span><span class="only-ka" lang="ka">სახელი და გვარი</span></label>
+            <input type="text" id="gaa-webinar-form-name" name="name" required autocomplete="name">
+          </div>
+          <div class="cw-field">
+            <label for="gaa-webinar-form-email"><span class="only-en">Email</span><span class="only-ka" lang="ka">ელ. ფოსტა</span></label>
+            <input type="email" id="gaa-webinar-form-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="cw-row">
+          <div class="cw-field">
+            <label for="gaa-webinar-form-phone"><span class="only-en">Phone</span><span class="only-ka" lang="ka">ტელეფონი</span></label>
+            <input type="tel" id="gaa-webinar-form-phone" name="phone" required autocomplete="tel">
+          </div>
+          <div class="cw-field">
+            <label for="gaa-webinar-form-spec"><span class="only-en">Specialty</span><span class="only-ka" lang="ka">სპეციალობა</span></label>
+            <select id="gaa-webinar-form-spec" name="specialty">
+              <option value="Cardiology" class="only-en">Cardiology</option>
+              <option value="Cardiology" class="only-ka" lang="ka">კარდიოლოგია</option>
+              <option value="Endocrinology" class="only-en">Endocrinology</option>
+              <option value="Endocrinology" class="only-ka" lang="ka">ენდოკრინოლოგია</option>
+              <option value="Lipidology" class="only-en">Lipidology</option>
+              <option value="Lipidology" class="only-ka" lang="ka">ლიპიდოლოგია</option>
+              <option value="Neurology" class="only-en">Neurology</option>
+              <option value="Neurology" class="only-ka" lang="ka">ნევროლოგია</option>
+              <option value="Angiology" class="only-en">Angiology</option>
+              <option value="Angiology" class="only-ka" lang="ka">ანგიოლოგია</option>
+              <option value="Vascular Radiology" class="only-en">Vascular Radiology</option>
+              <option value="Vascular Radiology" class="only-ka" lang="ka">სისხლძარღვთა რადიოლოგია</option>
+              <option value="Internal Medicine" class="only-en">Internal Medicine</option>
+              <option value="Internal Medicine" class="only-ka" lang="ka">შინაგანი მედიცინა</option>
+              <option value="Family Medicine" class="only-en">Family Medicine</option>
+              <option value="Family Medicine" class="only-ka" lang="ka">საოჯახო მედიცინა</option>
+              <option value="Other" class="only-en">Other</option>
+              <option value="Other" class="only-ka" lang="ka">სხვა</option>
+            </select>
+          </div>
+        </div>
+        <div class="cw-field">
+          <span class="cw-legend"><span class="only-en">Webinars</span><span class="only-ka" lang="ka">ვებინარები</span></span>
+          <div class="cw-choices">
+            <label class="cw-choice"><input type="checkbox" name="webinar_1" value="Webinar 1 (Tuesday, 1 December 2026 · 20:00): SCORE2-Diabetes and the “grey-zone” patient: when do we need carotid duplex and a CAC score?" data-cw-pick> <span><span class="only-en">1. SCORE2-Diabetes and the “grey-zone” patient: when do we need carotid duplex and a CAC score?<br><small style="color:#0E7C7B;font-weight:700">Tuesday, 1 December 2026 · 20:00</small></span><span class="only-ka" lang="ka">1. SCORE2-Diabetes და „ნაცრისფერი ზონის“ პაციენტები: როდის გვჭირდება საძილე არტერიის დუპლექსი და CAC score?<br><small style="color:#0E7C7B;font-weight:700">სამშაბათი, 2026 წლის 1 დეკემბერი · 20:00</small></span></span><em>35 ₾</em></label>
+            <label class="cw-choice"><input type="checkbox" name="webinar_2" value="Webinar 2 (Wednesday, 9 December 2026 · 20:00): Statin intolerance, resistant LDL-C and high Lp(a): five practical lipid-clinic algorithms" data-cw-pick> <span><span class="only-en">2. Statin intolerance, resistant LDL-C and high Lp(a): five practical lipid-clinic algorithms<br><small style="color:#0E7C7B;font-weight:700">Wednesday, 9 December 2026 · 20:00</small></span><span class="only-ka" lang="ka">2. სტატინ-აუტანლობა, რეზისტენტული LDL-C და მაღალი Lp(a): ლიპიდური კლინიკის 5 პრაქტიკული ალგორითმი<br><small style="color:#0E7C7B;font-weight:700">ოთხშაბათი, 2026 წლის 9 დეკემბერი · 20:00</small></span></span><em>35 ₾</em></label>
+            <label class="cw-choice"><input type="checkbox" name="webinar_3" value="Webinar 3 (Wednesday, 16 December 2026 · 20:00): Diabetes, obesity and CKD in one patient: choosing SGLT2i, GLP-1 RA and finerenone regardless of glycaemia" data-cw-pick> <span><span class="only-en">3. Diabetes, obesity and CKD in one patient: choosing SGLT2i, GLP-1 RA and finerenone regardless of glycaemia<br><small style="color:#0E7C7B;font-weight:700">Wednesday, 16 December 2026 · 20:00</small></span><span class="only-ka" lang="ka">3. დიაბეტი, სიმსუქნე და CKD ერთ პაციენტში: როგორ შევარჩიოთ SGLT2i, GLP-1 RA და ფინერენონი გლიკემიის მიუხედავად?<br><small style="color:#0E7C7B;font-weight:700">ოთხშაბათი, 2026 წლის 16 დეკემბერი · 20:00</small></span></span><em>35 ₾</em></label>
+            <label class="cw-choice"><input type="checkbox" name="webinar_4" value="Webinar 4 (Tuesday, 22 December 2026 · 20:00): Asymptomatic carotid stenosis and peripheral artery disease: antithrombotic and lipid-lowering synergy" data-cw-pick> <span><span class="only-en">4. Asymptomatic carotid stenosis and peripheral artery disease: antithrombotic and lipid-lowering synergy<br><small style="color:#0E7C7B;font-weight:700">Tuesday, 22 December 2026 · 20:00</small></span><span class="only-ka" lang="ka">4. ასიმპტომური კაროტიდული სტენოზი და პერიფერიული არტერიების დაავადება: ანტითრომბოზული და ჰიპოლიპიდემიური სინერგია<br><small style="color:#0E7C7B;font-weight:700">სამშაბათი, 2026 წლის 22 დეკემბერი · 20:00</small></span></span><em>35 ₾</em></label>
+          </div>
+          <button type="button" class="cw-all" data-cw-all><span class="only-en">Select the full series — 100 ₾</span><span class="only-ka" lang="ka">სრული სერიის არჩევა — 100 ₾</span></button>
+        </div>
+        <div class="cw-total">
+          <span class="cw-total-label"><span class="only-en">Total</span><span class="only-ka" lang="ka">ჯამი</span></span>
+          <span class="cw-total-amount" data-cw-total>0 ₾</span>
+        </div>
+        <div class="cw-hint" data-cw-hint></div>
+        <button type="submit" class="cw-submit"><span class="only-en">Register</span><span class="only-ka" lang="ka">რეგისტრაცია</span></button>
+        <div class="cw-status" data-cw-status></div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- CONFERENCE -->
 <section id="conference" style="padding: 4rem 1.5rem 3.5rem; background: var(--white); text-align:center;">
   <div class="section-inner">
@@ -539,30 +774,19 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
       <p class="only-ka ka" lang="ka" style="font-size:14.5px; line-height:1.8; color:var(--text);">მე-7 საერთაშორისო სამეცნიერო კონფერენცია 2026 წლის 7 ნოემბერს სასტუმრო „ხედში“ ჩატარდა. ღონისძიება კარგ ატმოსფეროში, მაღალ სამეცნიერო დონეზე და აქტიური დისკუსიით ჩაიარა. საქართველოს ათეროსკლეროზის ასოციაცია მადლობას უხდის მომხსენებლებს, მონაწილეებსა და პარტნიორებს, მათ შორის ევროპის ათეროსკლეროზის საზოგადოებას, დღის წარმატებისთვის.</p>
     </div>
 
-    <div id="programme" class="prog">
-      <span id="speakers"></span>
-      <div class="prog-head">
-        <h3><span class="only-en">Conference Programme</span><span class="only-ka" lang="ka">კონფერენციის პროგრამა</span></h3>
-        <p><span class="only-en">November 7, 2026 · Khedi Hotel Tbilisi, Avlabari</span><span class="only-ka" lang="ka">2026 წლის 7 ნოემბერი · სასტუმრო „ხედი“, ავლაბარი</span></p>
+    <div id="speakers" style="max-width: 980px; margin: 2.5rem auto 0;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 800; color: var(--navy); margin-bottom: 1.1rem;"><span class="only-en">Speakers</span><span class="only-ka" lang="ka">მომხსენებლები</span></h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.8rem;">
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Prof. Meral Kayıkçıoğlu</span><span class="only-ka" lang="ka">პროფ. მერალ ქაიქჩიოღლუ</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">Ege University, İzmir, Türkiye · EAS Executive Committee</span><span class="only-ka" lang="ka">ეგეს უნივერსიტეტი, იზმირი, თურქეთი · EAS-ის აღმასრულებელი კომიტეტი</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Prof. Tea Gamezardashvili</span><span class="only-ka" lang="ka">პროფ. თეა გამეზარდაშვილი</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">President, Georgian Atherosclerosis Association</span><span class="only-ka" lang="ka">საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Prof. Mahabbat Bekbossynova</span><span class="only-ka" lang="ka">პროფ. მაჰაბბათ ბექბოსინოვა</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">President, Kazakhstan Atherosclerosis Society</span><span class="only-ka" lang="ka">ყაზახეთის ათეროსკლეროზის საზოგადოების პრეზიდენტი</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Kakha Nadaraia, MD, PhD, FESC</span><span class="only-ka" lang="ka">კახა ნადარაია, MD, PhD, FESC</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">University of Georgia · TSU University Clinic “Vivamedi”</span><span class="only-ka" lang="ka">საქართველოს უნივერსიტეტი · თსუ საუნივერსიტეტო კლინიკა „ვივამედი“</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Tamar Gaprindashvili, MD, FACC</span><span class="only-ka" lang="ka">თამარ გაფრინდაშვილი, MD, FACC</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">N. Bokhua Clinic</span><span class="only-ka" lang="ka">ნ. ბოხუას სახელობის კლინიკა</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Prof. Manana Akhvlediani</span><span class="only-ka" lang="ka">პროფ. მანანა ახვლედიანი</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">Todua Clinic · Georgian Association of Laboratory Medicine</span><span class="only-ka" lang="ka">თოდუას კლინიკა · საქართველოს ლაბორატორიული მედიცინის ასოციაცია</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Nana Nikolaishvili, MD, PhD</span><span class="only-ka" lang="ka">ნანა ნიკოლაიშვილი, MD, PhD</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">K. Eristavi National Center of Surgery</span><span class="only-ka" lang="ka">კ. ერისთავის ქირურგიის ეროვნული ცენტრი</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Eliso Dgebuadze, MD, PhD</span><span class="only-ka" lang="ka">ელისო დგებუაძე, MD, PhD</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">Caucasus International University</span><span class="only-ka" lang="ka">კავკასიის საერთაშორისო უნივერსიტეტი</span></div></div>
+<div style="background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; text-align: left;"><div style="font-weight: 700; font-size: 14.5px; color: var(--navy);"><span class="only-en">Nino Svanidze, MD, PhD</span><span class="only-ka" lang="ka">ნინო სვანიძე, MD, PhD</span></div><div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5;"><span class="only-en">University Clinic “Remedical”</span><span class="only-ka" lang="ka">საუნივერსიტეტო კლინიკა „რემედიქალი“</span></div></div>
       </div>
-      <div class="prog-row prog-plain"><div class="prog-time">10:00</div><div><div class="only-en prog-title">Registration</div><div class="only-ka prog-title" lang="ka">რეგისტრაცია</div></div></div>
-      <div class="prog-row prog-plain"><div class="prog-time">10:30</div><div><div class="only-en prog-title">Welcoming Coffee</div><div class="only-ka prog-title" lang="ka">მისასალმებელი ყავა</div></div></div>
-      <div class="prog-row prog-plain"><div class="prog-time">11:00</div><div><div class="only-en prog-title">Opening Remarks &amp; Welcoming Speeches</div><div class="only-ka prog-title" lang="ka">გახსნა და მისასალმებელი სიტყვები</div></div></div>
-      <div class="prog-sec"><span class="only-en">Scientific Session</span><span class="only-ka" lang="ka">სამეცნიერო სესია</span></div>
-      <div class="prog-row"><div class="prog-time">11:05</div><div><div class="only-en"><div class="prog-title">Integrating the Cardio-Metabolic-Lifestyle Axis for Brain and Heart Prevention</div><div class="prog-spk">Meral Kayıkçıoğlu</div><div class="prog-cred">Professor of Cardiology<br>Head of the Department of Cardiology, Ege University School of Medicine, İzmir, Türkiye<br>Executive Committee Member, European Atherosclerosis Society (EAS)<br>Vice Director, Ege University Research and Application Center of Drug Development and Pharmacokinetics (ARGEFAR)</div></div><div class="only-ka" lang="ka"><div class="prog-title">კარდიომეტაბოლური და ცხოვრების წესის ღერძის ინტეგრაცია ტვინისა და გულის პრევენციისთვის</div><div class="prog-spk">მერალ ქაიქჩიოღლუ</div><div class="prog-cred">კარდიოლოგიის პროფესორი<br>ეგეს უნივერსიტეტის სამედიცინო სკოლის (იზმირი, თურქეთი) კარდიოლოგიის დეპარტამენტის ხელმძღვანელი<br>ევროპის ათეროსკლეროზის საზოგადოების (EAS) აღმასრულებელი კომიტეტის წევრი<br>ეგეს უნივერსიტეტის წამლების შემუშავებისა და ფარმაკოკინეტიკის კვლევისა და გამოყენების ცენტრის (ARGEFAR) დირექტორის მოადგილე</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">11:25</div><div><div class="only-en"><div class="prog-title">Clinical Intelligence in the Prevention of Cardiovascular Diseases</div><div class="prog-spk">Tea Gamezardashvili, MD, PhD, MHA, FACC</div><div class="prog-cred">President, Georgian Atherosclerosis Association<br>National Coordinator, Lipid Clinic Network<br>Associate Professor, University of Georgia<br>Clinical Director, University Clinic “Remedical”</div></div><div class="only-ka" lang="ka"><div class="prog-title">კლინიკური ინტელექტი გულ-სისხლძარღვთა დაავადებათა პრევენციაში</div><div class="prog-spk">თეა გამეზარდაშვილი, MD, PhD, MHA, FACC</div><div class="prog-cred">საქართველოს ათეროსკლეროზის ასოციაციის პრეზიდენტი<br>ლიპიდური კლინიკების საერთაშორისო ქსელის ეროვნული კოორდინატორი<br>საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>საუნივერსიტეტო კლინიკა „რემედიქალის“ კლინიკური დირექტორი</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">11:45</div><div><div class="only-en"><div class="prog-title">From Screening to Follow-up: A Digital Model of Cardio-metabolic Risk Assessment in the Rural Population of Kazakhstan</div><div class="prog-spk">Mahabbat Bekbossynova, MD, DSc</div><div class="prog-cred">Deputy Chair of the Board, University Medical Center<br>Chief Cardiologist, Ministry of Health of Kazakhstan<br>President, Kazakhstan Atherosclerosis Society<br>Board Member, International Atherosclerosis Society (IAS)<br>National Leader, Kazakhstan’s Lipid Clinic Network</div></div><div class="only-ka" lang="ka"><div class="prog-title">სკრინინგიდან შემდგომ მეთვალყურეობამდე: კარდიომეტაბოლური რისკის შეფასების ციფრული მოდელი ყაზახეთის სოფლის მოსახლეობაში</div><div class="prog-spk">მაჰაბბათ ბექბოსინოვა, MD, DSc</div><div class="prog-cred">უნივერსიტეტის სამედიცინო ცენტრის გამგეობის თავმჯდომარის მოადგილე<br>ყაზახეთის ჯანდაცვის სამინისტროს მთავარი კარდიოლოგი<br>ყაზახეთის ათეროსკლეროზის საზოგადოების პრეზიდენტი<br>ათეროსკლეროზის საერთაშორისო საზოგადოების (IAS) გამგეობის წევრი<br>ყაზახეთის ლიპიდური კლინიკების ქსელის ეროვნული ლიდერი</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">12:05</div><div><div class="only-en"><div class="prog-title">What Challenges Do We Face Beyond LDL Cholesterol Lowering? – Assessment and Management of Residual Risk in Cardiovascular Disease</div><div class="prog-spk">Kakha Nadaria, MD, PhD, FESC</div><div class="prog-cred">Associate Professor, University of Georgia<br>Head of the Working Group on Acute Cardiac Care Management, Georgian Society of Cardiology<br>Member of the Board, Georgian Atherosclerosis Association<br>TSU University Clinic “Vivamedi”</div></div><div class="only-ka" lang="ka"><div class="prog-title">რა გამოწვევები გვაქვს დაბალი სიმკვრივის ლიპოპროტეინების დაქვეითების მიღმა? - ნარჩენი რისკის შეფასება და მართვა კარდიოვასკულური დაავადებების დროს</div><div class="prog-spk">კახა ნადარაია, MD, PhD, FESC</div><div class="prog-cred">საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>საქართველოს ათეროსკლეროზის ასოციაციის გამგეობის წევრი<br>საქართველოს კარდიოლოგთა საზოგადოების მწვავე კარდიოლოგიური პათოლოგიების მართვის სამუშაო ჯგუფის ხელმძღვანელი<br>თსუ საუნივერსიტეტო კლინიკა „ვივამედი“</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">12:25</div><div><div class="only-en"><div class="prog-title">Beyond Statins: The Role of Inclisiran in Cardiovascular Secondary Prevention</div><div class="prog-spk">Tamar Gaprindashvili, MD, FACC</div><div class="prog-cred">Head of the Cardio-Oncology Unit, N. Bokhua Clinic</div></div><div class="only-ka" lang="ka"><div class="prog-title">სტატინებს მიღმა: ინკლისირანის როლი გულ-სისხლძარღვთა დაავადებათა მეორად პრევენციაში</div><div class="prog-spk">თამარ გაფრინდაშვილი, MD, FACC</div><div class="prog-cred">კარდიო-ონკოლოგიის განყოფილების ხელმძღვანელი, ნ. ბოხუას სახელობის კლინიკა</div></div></div></div>
-      <div class="prog-row prog-plain prog-break"><div class="prog-time">12:45</div><div><div class="only-en prog-title">Break</div><div class="only-ka prog-title" lang="ka">შესვენება</div></div></div>
-      <div class="prog-row"><div class="prog-time">13:20</div><div><div class="only-en"><div class="prog-title">From Biomarker to Clinical Decision: The Laboratory Perspective in Atherosclerosis Assessment</div><div class="prog-spk">Manana Akhvlediani, MD, PhD</div><div class="prog-cred">Head of the Laboratory Service, Todua Clinic<br>Professor, Caucasus University<br>President, Georgian Association of Laboratory Medicine</div></div><div class="only-ka" lang="ka"><div class="prog-title">ბიომარკერიდან კლინიკურ გადაწყვეტილებამდე: „ლაბორატორიული მედიცინის როლი ათეროსკლეროზის შეფასებაში“</div><div class="prog-spk">მანანა ახვლედიანი, MD, PhD</div><div class="prog-cred">თოდუას კლინიკის ლაბორატორიული სამსახურის ხელმძღვანელი<br>კავკასიის უნივერსიტეტის პროფესორი<br>საქართველოს ლაბორატორიული მედიცინის ასოციაციის პრეზიდენტი</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">13:40</div><div><div class="only-en"><div class="prog-title">Integrated Role of PET/CT and Coronary CT Angiography in the Assessment of High-Risk Atherosclerotic Plaques</div><div class="prog-spk">Nana Nikolaishvili, MD, PhD</div><div class="prog-cred">Head of Residency Program, K. Eristavi National Center of Surgery</div></div><div class="only-ka" lang="ka"><div class="prog-title">PET/CT-ისა და კორონარული CT ანგიოგრაფიის ინტეგრირებული როლი მაღალი რისკის ათეროსკლეროზული ფოლაქის შეფასებაში</div><div class="prog-spk">ნანა ნიკოლაიშვილი, MD, PhD</div><div class="prog-cred">კავკასიის საერთაშორისო უნივერსიტეტის ასოცირებული პროფესორი<br>ქირურგიის ეროვნული ცენტრის კარდიორადიოლოგი</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">14:00</div><div><div class="only-en"><div class="prog-title">Cryptogenic Stroke and Occult Arrhythmias: From Diagnosis to Secondary Prevention</div><div class="prog-spk">Eliso Dgebuadze, MD, PhD</div><div class="prog-cred">Assistant Professor, Caucasus International University<br>TSU University Clinic “Vivamed”</div></div><div class="only-ka" lang="ka"><div class="prog-title">კრიპტოგენული ინსულტი და ფარული არითმიები: დიაგნოსტიკიდან მეორეულ პრევენციამდე</div><div class="prog-spk">ელისო დგებუაძე, MD, PhD</div><div class="prog-cred">კავკასიის საერთაშორისო უნივერსიტეტის ასისტენტ-პროფესორი<br>თსუ საუნივერსიტეტო კლინიკა „ვივამედი“</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">14:20</div><div><div class="only-en"><div class="prog-title">Management of Dyslipidemia Across the Lifespan of a Woman</div><div class="prog-spk">Nino Svanidze, MD, PhD</div><div class="prog-cred">Assistant Professor, Georgian National University<br>Cardiologist, “Remedical” University Clinic</div></div><div class="only-ka" lang="ka"><div class="prog-title">დისლიპიდემიის მართვა ქალის სიცოცხლის სხვადასხვა ეტაპზე</div><div class="prog-spk">ნინო სვანიძე, MD, PhD</div><div class="prog-cred">საქართველოს ეროვნული უნივერსიტეტის ასისტენტ-პროფესორი<br>კარდიოლოგი, საუნივერსიტეტო კლინიკა „რემედიქალი“</div></div></div></div>
-      <div class="prog-row"><div class="prog-time">14:40</div><div><div class="only-en"><div class="prog-title">Challenges of Early Lipid-Lowering and Anti-Inflammatory Therapy in Patients at Very High and Extreme Risk</div><div class="prog-spk">Kakha Nadaria, MD, PhD, FESC</div><div class="prog-cred">Associate Professor, University of Georgia<br>Head of the Working Group on Acute Cardiac Care Management, Georgian Society of Cardiology<br>Member of the Board, Georgian Atherosclerosis Association<br>TSU University Clinic “Vivamedi”</div></div><div class="only-ka" lang="ka"><div class="prog-title">ადრეული ლიპიდდამაქვეითებელი და ანტიანთებითი თერაპიის გამოწვევები ძალიან მაღალი და ექსტრემალური კარდიოვასკულური რისკის პაციენტებში</div><div class="prog-spk">კახა ნადარაია, MD, PhD, FESC</div><div class="prog-cred">საქართველოს უნივერსიტეტის ასოცირებული პროფესორი<br>საქართველოს ათეროსკლეროზის ასოციაციის გამგეობის წევრი<br>საქართველოს კარდიოლოგთა საზოგადოების მწვავე კარდიოლოგიური პათოლოგიების მართვის სამუშაო ჯგუფის ხელმძღვანელი<br>თსუ საუნივერსიტეტო კლინიკა „ვივამედი“</div></div></div></div>
-      <div class="prog-row prog-plain"><div class="prog-time">15:00</div><div><div class="only-en prog-title">Discussion &amp; Q&amp;A</div><div class="only-ka prog-title" lang="ka">დისკუსია და კითხვა-პასუხი</div></div></div>
-      <div class="prog-row prog-plain"><div class="prog-time">15:30</div><div><div class="only-en prog-title">Closing Remarks</div><div class="only-ka prog-title" lang="ka">დასკვნითი სიტყვა</div></div></div>
-      <p class="prog-note"><span class="only-en">Programme subject to change.</span><span class="only-ka" lang="ka">პროგრამა შეიძლება შეიცვალოს.</span></p>
     </div>
 
     <div style="max-width:640px; margin:2.5rem auto 0; text-align:center;">
@@ -656,14 +880,25 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
  
     <div class="news-grid">
       <div class="news-card">
+        <div class="news-img">💻</div>
+        <div class="news-body">
+          <div class="news-date only-en">REGISTRATION OPEN</div>
+          <div class="news-date only-ka" lang="ka">რეგისტრაცია ღიაა</div>
+          <h3><span class="only-en">CMEA online series: 4 practical webinars on cardiometabolic algorithms</span><span class="only-ka" lang="ka">CMEA ონლაინ სერია: 4 პრაქტიკული ვებინარი კარდიომეტაბოლურ ალგორითმებზე</span></h3>
+          <div class="h3-ka only-en" lang="ka">CMEA ონლაინ სერია: 4 პრაქტიკული ვებინარი კარდიომეტაბოლურ ალგორითმებზე</div>
+          <p class="only-en">1, 9, 16 and 22 December, 20:00, online. 35 ₾ per webinar or 100 ₾ for all four, with the 100 ₾ credited towards the accredited CMEA course. <a href="#webinars" style="color:var(--teal); font-weight:600;">Register →</a></p>
+          <p class="only-ka ka" lang="ka">1, 9, 16 და 22 დეკემბერი, 20:00, ონლაინ. თითო ვებინარი 35 ₾, ოთხივე — 100 ₾, რომელიც ჩაგეთვლებათ CMEA-ს აკრედიტებული კურსის საფასურში. <a href="#webinars" style="color:var(--teal); font-weight:600;">რეგისტრაცია →</a></p>
+        </div>
+      </div>
+      <div class="news-card">
         <div class="news-img">🎓</div>
         <div class="news-body">
           <div class="news-date only-en">7 NOVEMBER</div>
           <div class="news-date only-ka" lang="ka">7 ნოემბერი</div>
           <h3><span class="only-en">7th International Scientific Conference held in Tbilisi</span><span class="only-ka" lang="ka">თბილისში ჩატარდა მე-7 საერთაშორისო სამეცნიერო კონფერენცია</span></h3>
           <div class="h3-ka only-en" lang="ka">თბილისში ჩატარდა მე-7 საერთაშორისო სამეცნიერო კონფერენცია</div>
-          <p class="only-en">The conference took place at Khedi Hotel Tbilisi in a warm atmosphere, at a high scientific level and with lively discussion. <a href="#programme" style="color:var(--teal); font-weight:600;">See the programme →</a></p>
-          <p class="only-ka ka" lang="ka">კონფერენცია სასტუმრო „ხედში“ ჩატარდა კარგ ატმოსფეროში, მაღალ სამეცნიერო დონეზე და აქტიური დისკუსიით. <a href="#programme" style="color:var(--teal); font-weight:600;">იხილეთ პროგრამა →</a></p>
+          <p class="only-en">The conference took place at Khedi Hotel Tbilisi in a warm atmosphere, at a high scientific level and with lively discussion. <a href="#speakers" style="color:var(--teal); font-weight:600;">See the speakers →</a></p>
+          <p class="only-ka ka" lang="ka">კონფერენცია სასტუმრო „ხედში“ ჩატარდა კარგ ატმოსფეროში, მაღალ სამეცნიერო დონეზე და აქტიური დისკუსიით. <a href="#speakers" style="color:var(--teal); font-weight:600;">იხილეთ მომხსენებლები →</a></p>
         </div>
       </div>
       <div class="news-card">
@@ -965,6 +1200,7 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
       <h4><span class="only-en">Networks</span><span class="only-ka" lang="ka">ქსელები</span></h4>
       <ul>
         <li><a href="georgian-lcn.html">Georgian-LCN</a></li>
+        <li><a href="#webinars"><span class="only-en">CMEA Webinars</span><span class="only-ka" lang="ka">CMEA ვებინარები</span></a></li>
         <li><a href="https://academy.athero-geo.com"><span class="only-en">CMEA Academy</span><span class="only-ka" lang="ka">CMEA აკადემია</span></a></li>
         <li><a href="https://eas-society.org" target="_blank">EAS</a></li>
         <li><a href="https://eas-society.org/collaborations/lcn/" target="_blank">EAS-LCN</a></li>
@@ -1004,37 +1240,6 @@ function setLang(lang) {
 })();
  
 
-var _cf = document.getElementById('conf-form');
-if (_cf) _cf.addEventListener('submit', function(e) {
-  e.preventDefault();
-  var form = e.target;
-  var statusEl = document.getElementById('conf-form-status');
-  var isKa = document.body.classList.contains('lang-ka');
-  var name = document.getElementById('conf-name').value.trim();
-
-  statusEl.style.color = 'var(--text-muted)';
-  statusEl.textContent = isKa ? 'იგზავნება...' : 'Sending...';
-
-  fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(function(response) {
-    if (response.ok) {
-      statusEl.style.color = '#0E7C7B';
-      statusEl.textContent = isKa
-        ? 'გმადლობთ, ' + name + '! თქვენი რეგისტრაცია მიღებულია.'
-        : 'Thank you, ' + name + '! Your registration has been received.';
-      form.reset();
-    } else {
-      statusEl.style.color = '#D42B2B';
-      statusEl.textContent = isKa ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა.' : 'Something went wrong. Please try again.';
-    }
-  }).catch(function() {
-    statusEl.style.color = '#D42B2B';
-    statusEl.textContent = isKa ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა.' : 'Something went wrong. Please try again.';
-  });
-});
 
 document.getElementById('gaa-form').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -1066,6 +1271,71 @@ document.getElementById('gaa-form').addEventListener('submit', function(e) {
     statusEl.textContent = isKa ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა.' : 'Something went wrong. Please try again.';
   });
 });
+</script>
+
+<script>
+/* CMEA webinar registration: totals + Formspree submit */
+(function () {
+  var form = document.getElementById('gaa-webinar-form');
+  if (!form) return;
+  var PRICE = 35, BUNDLE = 100;
+  var picks = form.querySelectorAll('[data-cw-pick]');
+  var totalEl = form.querySelector('[data-cw-total]');
+  var hintEl = form.querySelector('[data-cw-hint]');
+  var statusEl = form.querySelector('[data-cw-status]');
+  function isKa() { return document.body.classList.contains('lang-ka'); }
+  function count() { var n = 0; picks.forEach(function (p) { if (p.checked) n++; }); return n; }
+  function total(n) { return n === picks.length ? BUNDLE : n * PRICE; }
+  function update() {
+    var n = count(), ka = isKa();
+    totalEl.textContent = total(n) + ' ₾';
+    if (n === picks.length) {
+      hintEl.textContent = ka ? 'სრული სერია — დაზოგავთ 40 ₾-ს, და 100 ₾ ჩაგეთვლებათ აკრედიტებული კურსის საფასურში.'
+                              : 'Full series — you save 40 ₾, and 100 ₾ is credited towards the accredited course.';
+    } else if (n === picks.length - 1) {
+      hintEl.textContent = ka ? 'ოთხივე ვებინარი 100 ₾ ღირს — უფრო იაფია, ვიდრე სამი ცალ-ცალკე.'
+                              : 'All four webinars cost 100 ₾ — less than three bought separately.';
+    } else { hintEl.textContent = ''; }
+  }
+  picks.forEach(function (p) { p.addEventListener('change', update); });
+  form.querySelector('[data-cw-all]').addEventListener('click', function () {
+    picks.forEach(function (p) { p.checked = true; }); update();
+  });
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('button[onclick*="setLang"]')) setTimeout(update, 0);
+  });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var n = count(), ka = isKa();
+    if (!n) {
+      statusEl.style.color = '#C0392B';
+      statusEl.textContent = ka ? 'გთხოვთ, აირჩიოთ ერთი ვებინარი მაინც.' : 'Please choose at least one webinar.';
+      return;
+    }
+    var names = [];
+    picks.forEach(function (p) { if (p.checked) names.push(p.value); });
+    form.elements['package'].value = n === picks.length ? 'Full series (4 webinars) — 100 GEL, credited towards the accredited course' : 'Individual webinars (' + n + ' x 35 GEL)';
+    form.elements['selected_webinars'].value = names.join(' | ');
+    form.elements['total_gel'].value = String(total(n));
+    statusEl.style.color = 'inherit';
+    statusEl.textContent = ka ? 'იგზავნება...' : 'Sending...';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (r.ok) {
+          statusEl.style.color = '#0E7C7B';
+          statusEl.textContent = ka ? 'გმადლობთ! რეგისტრაცია მიღებულია. მალე მიიღებთ წერილს გადახდის დეტალებით.'
+                                    : 'Thank you! Your registration has been received. You will soon get an email with the payment details.';
+          form.reset(); update();
+        } else { throw new Error(); }
+      })
+      .catch(function () {
+        statusEl.style.color = '#C0392B';
+        statusEl.textContent = ka ? 'შეცდომა მოხდა. გთხოვთ, ცადოთ ხელახლა ან მოგვწეროთ: infoathero@gmail.com'
+                                  : 'Something went wrong. Please try again or email infoathero@gmail.com';
+      });
+  });
+  update();
+})();
 </script>
 </body>
 </html>
