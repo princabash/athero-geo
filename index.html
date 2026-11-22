@@ -403,23 +403,37 @@
     .footer-bottom { flex-direction: column; text-align: center; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  /* COOKIE CONSENT */
+  .cc-banner { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 9999; max-width: 760px; margin: 0 auto;
+    background: var(--navy); color: #fff; border-radius: 10px; padding: 1.1rem 1.4rem; box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    display: none; gap: 1rem 1.5rem; align-items: center; flex-wrap: wrap; font-size: 14px; line-height: 1.55; }
+  .cc-banner.show { display: flex; }
+  .cc-text { flex: 1 1 360px; color: rgba(255,255,255,0.9); }
+  .cc-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .cc-btn { border-radius: 5px; padding: 0.55rem 1.1rem; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .cc-accept { background: var(--gold); color: #fff; border: 1px solid var(--gold); }
+  .cc-decline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.5); }
+  .cc-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .cc-settings-link { background: none; border: none; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
 </style>
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code (loads only after cookie consent) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1498361835643434');
-fbq('track', 'PageView');
+window.GAA_PIXEL_IDS = ['2695207107602211', '1498361835643434'];
+window.gaaLoadPixel = function () {
+  if (window.fbq) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  window.GAA_PIXEL_IDS.forEach(function (id) { fbq('init', id); });
+  fbq('track', 'PageView');
+};
+(function () {
+  try { if (localStorage.getItem('gaa-consent') === 'granted') window.gaaLoadPixel(); } catch (e) {}
+})();
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 </head>
 <body class="lang-en">
@@ -1220,6 +1234,7 @@ src="https://www.facebook.com/tr?id=1498361835643434&ev=PageView&noscript=1"
   </div>
   <div class="footer-bottom">
     <span>© 2026 Georgian Atherosclerosis Association · <span lang="ka">საქართველოს ათეროსკლეროზის ასოციაცია</span></span>
+    <button type="button" class="cc-settings-link" onclick="gaaOpenCookieSettings()"><span class="only-en">Cookie settings</span><span class="only-ka" lang="ka">Cookie პარამეტრები</span></button>
     <div class="footer-social">
       <a href="#" aria-label="Facebook">f</a>
       <a href="#" aria-label="LinkedIn">in</a>
@@ -1337,6 +1352,34 @@ document.getElementById('gaa-form').addEventListener('submit', function(e) {
       });
   });
   update();
+})();
+</script>
+
+<!-- COOKIE CONSENT -->
+<div class="cc-banner" id="cc-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <div class="cc-text">
+    <span class="only-en">We use cookies, including the Meta Pixel, to measure visits and improve our outreach. They are set only if you accept. Form details you submit are never shared with Meta.</span>
+    <span class="only-ka" lang="ka">ვიზიტების გასაზომად და ჩვენი ინფორმაციის უკეთ გასავრცელებლად ვიყენებთ cookie-ებს, მათ შორის Meta Pixel-ს. ისინი მხოლოდ თქვენი თანხმობის შემთხვევაში ჩაირთვება. ფორმებში შეყვანილი მონაცემები Meta-ს არასდროს გადაეცემა.</span>
+  </div>
+  <div class="cc-actions">
+    <button type="button" class="cc-btn cc-decline" id="cc-decline"><span class="only-en">Decline</span><span class="only-ka" lang="ka">უარი</span></button>
+    <button type="button" class="cc-btn cc-accept" id="cc-accept"><span class="only-en">Accept</span><span class="only-ka" lang="ka">ვეთანხმები</span></button>
+  </div>
+</div>
+<script>
+(function () {
+  var banner = document.getElementById('cc-banner');
+  function get() { try { return localStorage.getItem('gaa-consent'); } catch (e) { return null; } }
+  function set(v) { try { localStorage.setItem('gaa-consent', v); } catch (e) {} }
+  if (!get()) banner.classList.add('show');
+  document.getElementById('cc-accept').addEventListener('click', function () {
+    set('granted'); banner.classList.remove('show'); window.gaaLoadPixel();
+  });
+  document.getElementById('cc-decline').addEventListener('click', function () {
+    var was = get(); set('denied'); banner.classList.remove('show');
+    if (was === 'granted') location.reload();
+  });
+  window.gaaOpenCookieSettings = function () { banner.classList.add('show'); };
 })();
 </script>
 </body>
